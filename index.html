@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>האתר שלך ברמה אחרת</title>
+  <link rel="preload" href="fonts/Birzia-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Birzia-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
+  <div class="bg-cursor-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="עמוד הבית"><img class="logo__img" src="images/atario-logo.png" alt="" /></a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="services.html">שירותים ומחירים</a>
+        <a href="portfolio.html">תיק עבודות</a>
+        <a href="about.html">מי אנחנו</a>
+        <a class="nav__mobile-cta js-open-contact-modal" href="#">יצירת קשר</a>
+      </nav>
+      <a class="btn btn--outline header__cta js-open-contact-modal" href="#">יצירת קשר</a>
+      <button type="button" class="nav-toggle" aria-label="תפריט" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">+ פתרונות דיגיטליים חכמים</p>
+          <h1 class="hero__title">
+            <span class="hero__title-line">האתר שלך</span>
+            <span class="hero__title-line hero__title-line--accent">ברמה אחרת.</span>
+          </h1>
+          <p class="hero__sub">
+            אנחנו בונים נוכחות דיגיטלית שמביאה לקוחות אמיתיים: עיצוב, מהירות ומסרים שמייצרים פעולה.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--glow" href="services.html">לצפות בחבילות ומחירים</a>
+            <a class="btn btn--outline" href="portfolio.html">תיק עבודות</a>
+          </div>
+          <dl class="stats">
+            <div class="stats__item"><dt class="stats__num">+200</dt><dd class="stats__label">אתרים שהוקמו</dd></div>
+            <div class="stats__item"><dt class="stats__num">97%</dt><dd class="stats__label">שביעות רצון</dd></div>
+            <div class="stats__item"><dt class="stats__num">14 יום</dt><dd class="stats__label">זמן פיתוח ממוצע</dd></div>
+            <div class="stats__item"><dt class="stats__num">8 שנים</dt><dd class="stats__label">ניסיון בשוק</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual">
+          <div class="mockup">
+            <div class="mockup__chrome">
+              <span class="mockup__dot"></span><span class="mockup__dot"></span><span class="mockup__dot"></span>
+              <div class="mockup__url">www.yourclient.co.il</div>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__header-bar"></div>
+              <div class="mockup__hero-inner">
+                <div class="mockup__line mockup__line--wide"></div>
+                <div class="mockup__line"></div>
+                <button type="button" class="mockup__cta">פעולה</button>
+              </div>
+              <div class="mockup__cols">
+                <div class="mockup__col"></div>
+                <div class="mockup__col"></div>
+                <div class="mockup__col"></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-badge float-badge--conv">+340% יחס המרה</div>
+          <div class="float-badge float-badge--speed">
+            <span class="float-badge__check">✓</span> מהירות אתר 98
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap" id="clients-marquee">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <p class="section__eyebrow">חבילות</p>
+        <h2 class="section__title">כל סוג עסק. חבילה מתאימה.</h2>
+        <p class="section__lead">
+          בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
+        </p>
+        <div class="cards-grid cards-grid--pricing">
+          <article class="card card--package">
+            <div class="card__icon card__icon--star" aria-hidden="true">★</div>
+            <h3 class="card__title">אתר עסקי מתקדם</h3>
+            <p class="card__price">₪7,500</p>
+            <p class="card__desc">אתר מלא למותג שרוצה להתבלט, עמודים מרובים, טפסים, אינטגרציות וביצועים גבוהים.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--globe" aria-hidden="true">◉</div>
+            <h3 class="card__title">אתר תדמית</h3>
+            <p class="card__price">₪3,900</p>
+            <p class="card__desc">נוכחות אלגנטית ברשת, מספר עמודים, גלריה, פרטי קשר וחיבור לרשתות.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
+            <h3 class="card__title">דף נחיתה</h3>
+            <p class="card__price">₪1,500</p>
+            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
+            <h3 class="card__title">לא בטוחים?</h3>
+            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
+            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
+            <h3 class="card__title">מערכות ופורטלים</h3>
+            <p class="card__price">₪17,900</p>
+            <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--cart" aria-hidden="true">🛒</div>
+            <h3 class="card__title">חנות אונליין</h3>
+            <p class="card__price">₪10,900</p>
+            <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+        </div>
+        <p class="pricing-note" role="note">
+          <span class="pricing-note__text">המחירים אינם כוללים דומיין ואחסון.</span>
+          <span class="pricing-note__text pricing-note__text--highlight">המחירים כוללים מע״מ.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio-preview" aria-labelledby="portfolio-preview-title">
+      <div class="container">
+        <p class="section__eyebrow">תיק עבודות</p>
+        <h2 class="section__title" id="portfolio-preview-title">פרויקטים נבחרים</h2>
+        <p class="section__lead">שישה פרויקטים מהעבודות האחרונות שלנו. <a class="card__link" href="portfolio.html">לתיק המלא</a></p>
+        <div class="portfolio-showcase">
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/01.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">ספא ראש ישראל</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/02.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Fests</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://fests.io/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/03.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Buyz</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/04.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Seato</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/07.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">REATS</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/06.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">אפק דודיק</h3>
+                <span class="portfolio-tile__tag">דף נחיתה</span>
+                <a class="portfolio-tile__btn" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">עמודים ממוקדים שמטרתם אחת, להמיר</p>
+            </div>
+          </article>
+        </div>
+        <p class="section__lead section__lead--center">
+          <a class="btn btn--outline" href="portfolio.html">צפייה בתיק העבודות</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <h2 class="section__title section__title--center">מאפיון להשקה – 4 שלבים</h2>
+        <p class="section__sub section__sub--center">תהליך מסודר משיחת האפיון ועד עלייה לאוויר, עם עדכונים שקופים בדרך.</p>
+        <div class="timeline">
+          <div class="timeline__track"></div>
+          <ol class="timeline__nodes">
+            <li><span class="timeline__num">01</span><span class="timeline__label">אפיון</span></li>
+            <li><span class="timeline__num">02</span><span class="timeline__label">עיצוב UI/UX</span></li>
+            <li><span class="timeline__num">03</span><span class="timeline__label">פיתוח</span></li>
+            <li><span class="timeline__num">04</span><span class="timeline__label">השקה ותמיכה</span></li>
+          </ol>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <h3 class="process-step__title">אפיון</h3>
+            <p>מזהים יעדים, קהל יעד ומסרים. בונים מפת אתר ותוכן כדי שכל החלטה עיצובית וטכנית תשרת המרה.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">עיצוב UI/UX</h3>
+            <p>חוויית משתמש נקייה, היררכיה ברורה וממשק מודרני, מותאם למובייל ולמותג שלכם.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">פיתוח</h3>
+            <p>קוד נקי, ביצועים, נגישות בסיסית והכנה לקידום. אתם רואים גרסאות ביניים ומאושרים לפני השקה.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">השקה ותמיכה</h3>
+            <p>חיבור דומיין, אנליטיקס, הדרכה קצרה ותמיכה, כדי שהשקה תהיה רגועה ומקצועית.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="about">
+      <div class="container">
+        <div class="features__head">
+          <div class="features__rule" aria-hidden="true"></div>
+          <h2 class="section__title">לא עוד "סתם אתר".</h2>
+          <p class="section__lead">כל פרויקט נבנה סביב מטרת עסק: יותר פניות, יותר מכירות, יותר אמון, בלי קומפרומיס על איכות.</p>
+        </div>
+        <div class="cards-grid cards-grid--features">
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--pink" aria-hidden="true">◎</div>
+            <h3 class="card__title">מוקד בהמרות</h3>
+            <p class="card__desc">כפתורים, כותרות וטפסים במקומות הנכונים, כדי שהגולש יבצע את הפעולה שחשובה לכם.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--orange" aria-hidden="true">⚡</div>
+            <h3 class="card__title">מהירות טעינה</h3>
+            <p class="card__desc">אופטימיזציה לתמונות, קוד רזה ומדדי ליבה טובים, גוגל ומשתמשים מרוצים.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--purple" aria-hidden="true">📱</div>
+            <h3 class="card__title">מובייל תחילה</h3>
+            <p class="card__desc">רוב התעבורה היום מהנייד. העיצוב והפיתוח מתחילים משם ומתרחבים לדסקטופ.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--blue" aria-hidden="true">🔍</div>
+            <h3 class="card__title">SEO מובנה מהיסוד</h3>
+            <p class="card__desc">מבנה עמודים, כותרות, מטא וסכמות, בסיס נכון לקידום אורגני לאורך זמן.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--lock" aria-hidden="true">🔒</div>
+            <h3 class="card__title">האתר שלכם בבעלותכם</h3>
+            <p class="card__desc">ללא שבשביון, הקוד והנכסים בידיים שלכם, עם אפשרות לגזור ולהרחיב בעתיד.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--gold" aria-hidden="true">♥</div>
+            <h3 class="card__title">שקיפות מוחלטת</h3>
+            <p class="card__desc">מחירים, לו"ז ושלבים מפורטים מהיום הראשון, בלי הפתעות בסיום.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <p class="section__eyebrow">לקוחות מדברים</p>
+        <h2 class="section__title">מה אומרים עלינו</h2>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+            <p>"התהליך היה מקצועי מהשיחה הראשונה. האתר עלה בזמן וההמרות עלו במובייל בתוך שבועות."</p>
+            <footer class="testimonial__footer">
+              <span class="testimonial__avatar" aria-hidden="true">ד</span>
+              <div>
+                <cite class="testimonial__name">דני כהן</cite>
+                <span class="testimonial__role">מנכ״ל, סטארט-אפ SaaS</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+            <p>"סוף סוף סטודיו שמבין שאתר הוא כלי עסקי. עיצוב נקי ומהיר, בדיוק מה שהמותג שלנו היה צריך."</p>
+            <footer class="testimonial__footer">
+              <span class="testimonial__avatar" aria-hidden="true">מ</span>
+              <div>
+                <cite class="testimonial__name">מורן לוי</cite>
+                <span class="testimonial__role">שיווק, קמעונאות</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
+            <p>"קיבלנו ליווי אמיתי אחרי ההשקה. שינויים קטנים והדרכה, מרגישים שיש לנו שותף."</p>
+            <footer class="testimonial__footer">
+              <span class="testimonial__avatar" aria-hidden="true">י</span>
+              <div>
+                <cite class="testimonial__name">יוסי אברהם</cite>
+                <span class="testimonial__role">בעל מסעדת שף</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-block" id="contact">
+      <div class="container cta-block__inner">
+        <p class="section__eyebrow">מוכנים להתחיל?</p>
+        <h2 class="section__title section__title--cta">האתר שלכם מחכה להיבנות.</h2>
+        <p class="cta-block__sub">שיחת ייעוץ ראשונה, חינם לחלוטין, ללא התחייבות.</p>
+        <div class="cta-block__actions">
+          <a class="btn btn--outline" href="services.html">לצפות במחירים</a>
+          <a class="btn btn--primary btn--glow btn--phone" href="tel:+972534321792">
+            <span class="btn__phone-icon" aria-hidden="true">📞</span> 053-432-1792
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand" role="img" aria-label="לוגו המותג"><img class="footer__brand-logo" src="images/atario-logo.png" alt="" /></div>
+        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוהה ביותר.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">שירותים</h4>
+        <ul class="footer__links">
+          <li><a href="services.html">דפי נחיתה</a></li>
+          <li><a href="services.html">עיצוב אתרים</a></li>
+          <li><a href="services.html">אתרי עסקים</a></li>
+          <li><a href="services.html">חנויות אונליין</a></li>
+          <li><a href="services.html">מערכות ואפליקציות</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">ניווט</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="portfolio.html">תיק עבודות</a></li>
+          <li><a href="about.html">מי אנחנו</a></li>
+          <li><a class="js-open-contact-modal" href="#">צרו קשר</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">צרו קשר</h4>
+        <ul class="footer__contact">
+          <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
+          <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
+          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar container">
+      <p class="footer__copy"><span>© 2026</span> <img class="footer__copy-logo" src="images/atario-logo.png" alt="" /> <span>כל הזכויות שמורות.</span></p>
+      <p class="footer__credit">בונים מתוך תשוקה ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

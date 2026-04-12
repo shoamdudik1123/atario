@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>שירותים ומחירים, האתר שלך ברמה אחרת</title>
+  <link rel="preload" href="fonts/Birzia-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Birzia-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
+  <div class="bg-cursor-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="עמוד הבית"><img class="logo__img" src="images/atario-logo.png" alt="" /></a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="services.html" aria-current="page">שירותים ומחירים</a>
+        <a href="portfolio.html">תיק עבודות</a>
+        <a href="about.html">מי אנחנו</a>
+        <a class="nav__mobile-cta js-open-contact-modal" href="#">יצירת קשר</a>
+      </nav>
+      <a class="btn btn--outline header__cta js-open-contact-modal" href="#">יצירת קשר</a>
+      <button type="button" class="nav-toggle" aria-label="תפריט" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">שירותים ומחירים</h1>
+        <p class="page-hero__lead">חבילות ברורות, ללא אותיות קטנות. בוחרים מסלול, מתקדמים עם אפיון, ומגיעים להשקה עם ליווי מלא.</p>
+      </div>
+    </div>
+
+    <section class="section pricing">
+      <div class="container">
+        <p class="section__eyebrow">חבילות</p>
+        <h2 class="section__title">כל סוג עסק. חבילה מתאימה.</h2>
+        <p class="section__lead">
+          בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
+        </p>
+        <div class="cards-grid cards-grid--pricing">
+          <article class="card card--package">
+            <div class="card__icon card__icon--star" aria-hidden="true">★</div>
+            <h3 class="card__title">אתר עסקי מתקדם</h3>
+            <p class="card__price">₪7,500</p>
+            <p class="card__desc">אתר מלא למותג שרוצה להתבלט, עמודים מרובים, טפסים, אינטגרציות וביצועים גבוהים.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--globe" aria-hidden="true">◉</div>
+            <h3 class="card__title">אתר תדמית</h3>
+            <p class="card__price">₪3,900</p>
+            <p class="card__desc">נוכחות אלגנטית ברשת, מספר עמודים, גלריה, פרטי קשר וחיבור לרשתות.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
+            <h3 class="card__title">דף נחיתה</h3>
+            <p class="card__price">₪1,500</p>
+            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
+            <h3 class="card__title">לא בטוחים?</h3>
+            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
+            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
+            <h3 class="card__title">מערכות ופורטלים</h3>
+            <p class="card__price">₪17,900</p>
+            <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--cart" aria-hidden="true">🛒</div>
+            <h3 class="card__title">חנות אונליין</h3>
+            <p class="card__price">₪10,900</p>
+            <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+        </div>
+        <p class="pricing-note" role="note">
+          <span class="pricing-note__text">המחירים אינם כוללים דומיין ואחסון.</span>
+          <span class="pricing-note__text pricing-note__text--highlight">המחירים כוללים מע״מ.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="container">
+        <h2 class="section__title section__title--center">מאפיון להשקה – 4 שלבים</h2>
+        <p class="section__sub section__sub--center">תהליך מסודר משיחת האפיון ועד עלייה לאוויר, עם עדכונים שקופים בדרך.</p>
+        <div class="timeline">
+          <div class="timeline__track"></div>
+          <ol class="timeline__nodes">
+            <li><span class="timeline__num">01</span><span class="timeline__label">אפיון</span></li>
+            <li><span class="timeline__num">02</span><span class="timeline__label">עיצוב UI/UX</span></li>
+            <li><span class="timeline__num">03</span><span class="timeline__label">פיתוח</span></li>
+            <li><span class="timeline__num">04</span><span class="timeline__label">השקה ותמיכה</span></li>
+          </ol>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <h3 class="process-step__title">אפיון</h3>
+            <p>מזהים יעדים, קהל יעד ומסרים. בונים מפת אתר ותוכן כדי שכל החלטה עיצובית וטכנית תשרת המרה.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">עיצוב UI/UX</h3>
+            <p>חוויית משתמש נקייה, היררכיה ברורה וממשק מודרני, מותאם למובייל ולמותג שלכם.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">פיתוח</h3>
+            <p>קוד נקי, ביצועים, נגישות בסיסית והכנה לקידום. אתם רואים גרסאות ביניים ומאושרים לפני השקה.</p>
+          </div>
+          <div class="process-step">
+            <h3 class="process-step__title">השקה ותמיכה</h3>
+            <p>חיבור דומיין, אנליטיקס, הדרכה קצרה ותמיכה, כדי שהשקה תהיה רגועה ומקצועית.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-block">
+      <div class="container cta-block__inner">
+        <p class="section__eyebrow">מוכנים להתחיל?</p>
+        <h2 class="section__title section__title--cta">רוצים הצעה מותאמת?</h2>
+        <p class="cta-block__sub">שיחת קצרה ונדע להגיד בדיוק מה המסלול והטווח המתאימים.</p>
+        <div class="cta-block__actions">
+          <a class="btn btn--outline" href="index.html">חזרה לעמוד הבית</a>
+          <a class="btn btn--primary btn--glow js-open-contact-modal" href="#">יצירת קשר</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand" role="img" aria-label="לוגו המותג"><img class="footer__brand-logo" src="images/atario-logo.png" alt="" /></div>
+        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוהה ביותר.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">שירותים</h4>
+        <ul class="footer__links">
+          <li><a href="services.html">דפי נחיתה</a></li>
+          <li><a href="services.html">עיצוב אתרים</a></li>
+          <li><a href="services.html">אתרי עסקים</a></li>
+          <li><a href="services.html">חנויות אונליין</a></li>
+          <li><a href="services.html">מערכות ואפליקציות</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">ניווט</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="portfolio.html">תיק עבודות</a></li>
+          <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">צרו קשר</h4>
+        <ul class="footer__contact">
+          <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
+          <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
+          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar container">
+      <p class="footer__copy"><span>© 2026</span> <img class="footer__copy-logo" src="images/atario-logo.png" alt="" /> <span>כל הזכויות שמורות.</span></p>
+      <p class="footer__credit">בונים מתוך תשוקה ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>תיק עבודות, האתר שלך ברמה אחרת</title>
+  <link rel="preload" href="fonts/Birzia-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Birzia-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="portfolio-page">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
+  <div class="bg-cursor-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="עמוד הבית"><img class="logo__img" src="images/atario-logo.png" alt="" /></a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="services.html">שירותים ומחירים</a>
+        <a href="portfolio.html" aria-current="page">תיק עבודות</a>
+        <a href="about.html">מי אנחנו</a>
+        <a class="nav__mobile-cta js-open-contact-modal" href="#">יצירת קשר</a>
+      </nav>
+      <a class="btn btn--outline header__cta js-open-contact-modal" href="#">יצירת קשר</a>
+      <button type="button" class="nav-toggle" aria-label="תפריט" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">תיק עבודות</h1>
+        <div class="portfolio-intro">
+          <p>ממגוון פרויקטים, מאתרי תדמית ועד מערכות חכמות. כל פרויקט נבנה סביב מטרה עסקית ברורה ותוצאה מדויקת. כאן תוכלו לראות איך רעיונות הופכים לאתרים שעובדים באמת. אנחנו לא רק מעצבים, אנחנו בונים חוויות דיגיטליות שמייצרות תנועה, עניין ותוצאות. כל אתר שאתם רואים כאן נבנה בהתאמה מלאה ללקוח, עם חשיבה על חוויית משתמש, עיצוב מודרני וביצועים גבוהים.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee-wrap" id="clients-marquee">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <p class="section__eyebrow">פרויקטים נבחרים</p>
+        <h2 class="section__title">מה בנינו לאחרונים</h2>
+        <p class="section__lead">מבחר פרויקטים נבחרים שממחישים איך נראה אתר ברמה אחרת, בעיצוב, בחשיבה ובביצוע.</p>
+        <div class="portfolio-legend" aria-label="סוגי פרויקטים בתיק">
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">אתרי תדמית</h3>
+            <p class="portfolio-legend__desc">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">מערכות ופורטלים</h3>
+            <p class="portfolio-legend__desc">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">דפי נחיתה</h3>
+            <p class="portfolio-legend__desc">עמודים ממוקדים שמטרתם אחת, להמיר</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">חנויות אונליין</h3>
+            <p class="portfolio-legend__desc">אתרי מכירה עם חוויית משתמש שמגדילה הכנסות</p>
+          </div>
+        </div>
+        <div class="portfolio-showcase">
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/01.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">ספא ראש ישראל</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/02.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Fests</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://fests.io/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/03.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Buyz</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/04.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Seato</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/07.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">REATS</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/06.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">אפק דודיק</h3>
+                <span class="portfolio-tile__tag">דף נחיתה</span>
+                <a class="portfolio-tile__btn" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">עמודים ממוקדים שמטרתם אחת, להמיר</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/05.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">ThaiMarry</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://thaimarry.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/08.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">וואלנייטס</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://wallnights.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/09.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">BalanceIL</h3>
+                <span class="portfolio-tile__tag">אתר עסקי מתקדם</span>
+                <a class="portfolio-tile__btn" href="https://balanceil.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+              <p class="portfolio-tile__hint">אתרי עסק ורשתות עם מבנה מקצועי, חוויית משתמש וביצועים גבוהים</p>
+            </div>
+          </article>
+        </div>
+        <p class="section__lead section__lead--center portfolio-page__cta">
+          רוצים אתר דומה או משהו לגמרי מותאם? <a class="card__link js-open-contact-modal" href="#">דברו איתנו</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand" role="img" aria-label="לוגו המותג"><img class="footer__brand-logo" src="images/atario-logo.png" alt="" /></div>
+        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוהה ביותר.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">שירותים</h4>
+        <ul class="footer__links">
+          <li><a href="services.html">דפי נחיתה</a></li>
+          <li><a href="services.html">עיצוב אתרים</a></li>
+          <li><a href="services.html">אתרי עסקים</a></li>
+          <li><a href="services.html">חנויות אונליין</a></li>
+          <li><a href="services.html">מערכות ואפליקציות</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">ניווט</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="portfolio.html">תיק עבודות</a></li>
+          <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">צרו קשר</h4>
+        <ul class="footer__contact">
+          <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
+          <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
+          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar container">
+      <p class="footer__copy"><span>© 2026</span> <img class="footer__copy-logo" src="images/atario-logo.png" alt="" /> <span>כל הזכויות שמורות.</span></p>
+      <p class="footer__credit">בונים מתוך תשוקה ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
