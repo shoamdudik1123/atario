@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <script src="a11y.js"></script>
+  <div id="page-loader" class="page-loader" aria-busy="true" aria-live="polite">
+    <div class="page-loader__panel">
+      <div class="page-loader__orbit" aria-hidden="true"></div>
+      <div class="page-loader__brand">Atario</div>
+      <div class="page-loader__hint">טוען…</div>
+    </div>
+  </div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
@@ -30,24 +38,26 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">+ פתרונות דיגיטליים חכמים</p>
           <h1 class="hero__title">
-            <span class="hero__title-line">האתר שלך</span>
-            <span class="hero__title-line hero__title-line--accent">ברמה אחרת.</span>
+            <span class="hero__title-line">אתר טוב לא נמדד לפי איך הוא נראה</span>
+            <span class="hero__title-line hero__title-line--accent">אלא לפי מה שהוא מביא לך בפועל</span>
           </h1>
           <p class="hero__sub">
-            אנחנו בונים נוכחות דיגיטלית שמביאה לקוחות אמיתיים: עיצוב, מהירות ומסרים שמייצרים פעולה.
+            אנחנו בונים אתרים לעסקים שרוצים לגדול. אתרים שמעבירים מסר ברור, יוצרים אמון, וגורמים לאנשים לפנות.
+          </p>
+          <p class="hero__micro">
+            לא עוד אתר יפה שנשאר באוויר, אלא נכס דיגיטלי שעובד בשבילך יום יום.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary btn--glow" href="services.html">לצפות בחבילות ומחירים</a>
-            <a class="btn btn--outline" href="portfolio.html">תיק עבודות</a>
+            <a class="btn btn--primary btn--glow" href="#pricing">לצפות בחבילות ומחירים</a>
+            <a class="btn btn--outline" href="portfolio.html">צפה בעבודות</a>
           </div>
           <dl class="stats">
-            <div class="stats__item"><dt class="stats__num">+200</dt><dd class="stats__label">אתרים שהוקמו</dd></div>
+            <div class="stats__item"><dt class="stats__num">100+</dt><dd class="stats__label">אתרים שהוקמו</dd></div>
             <div class="stats__item"><dt class="stats__num">97%</dt><dd class="stats__label">שביעות רצון</dd></div>
             <div class="stats__item"><dt class="stats__num">14 יום</dt><dd class="stats__label">זמן פיתוח ממוצע</dd></div>
             <div class="stats__item"><dt class="stats__num">8 שנים</dt><dd class="stats__label">ניסיון בשוק</dd></div>
@@ -75,7 +85,7 @@
           </div>
           <div class="float-badge float-badge--conv">+340% יחס המרה</div>
           <div class="float-badge float-badge--speed">
-            <span class="float-badge__check">✓</span> מהירות אתר 98
+            <span class="float-badge__check">✓</span> מהירות אתר 98%
           </div>
         </div>
       </div>
@@ -92,14 +102,113 @@
       </div>
     </div>
 
+    <section class="section section--home-dual" aria-labelledby="home-strengths-title home-goal-title">
+      <div class="container">
+        <div class="home-dual-grid">
+          <div class="home-dual-col home-dual-col--card">
+            <h2 class="section__title home-dual-col__title" id="home-strengths-title">המקצועיות שלנו</h2>
+            <div class="prose-block prose-block--home prose-block--compact">
+              <p>
+                רוב בעלי העסקים כבר מבינים שהם צריכים אתר, אבל הרבה מהם לא מרוצים ממה שיש להם. האתר נראה בסדר, אבל אין מספיק פניות, אין תנועה איכותית, ואנשים נכנסים ויוצאים בלי להשאיר פרטים. זה לא קורה במקרה. אתר שלא מתוכנן נכון לא יצליח לייצר תוצאה.
+              </p>
+              <p>ופה אנחנו נכנסים.</p>
+            </div>
+          </div>
+          <div class="home-dual-col home-dual-col--card">
+            <h2 class="section__title home-dual-col__title" id="home-goal-title">מה המטרה שלנו?</h2>
+            <div class="prose-block prose-block--home prose-block--compact">
+              <p>לפני שמעצבים צבעים או בוחרים פונטים, אנחנו שואלים שאלה פשוטה:</p>
+              <p><strong>מה אתה רוצה שיקרה כשמישהו נכנס לאתר שלך?</strong> לקבוע שיחה, להשאיר פרטים, לקנות מוצר?</p>
+              <p>רק אחרי שזה ברור, בונים את כל האתר סביב זה: מבנה נכון, זרימה ברורה, מסר חד, וחוויית שימוש שמובילה לפעולה.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--home-services" aria-labelledby="home-value-props-title">
+      <div class="container">
+        <h2 class="section__title section__title--value-props" id="home-value-props-title">
+          <span class="section__title-icon" aria-hidden="true">&#9889;</span>
+          <span>מה אנחנו מביאים לכל אתר</span>
+        </h2>
+        <div class="value-props-grid">
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">ביצועים ומהירות</h3>
+            <ul class="value-prop-card__list">
+              <li>טעינה מהירה במיוחד</li>
+              <li>חוויית גלישה חלקה בלי תקיעות</li>
+            </ul>
+          </article>
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">קידום אורגני בגוגל</h3>
+            <ul class="value-prop-card__list">
+              <li>מבנה אתר נכון למנועי חיפוש</li>
+              <li>בסיס חזק להופעה בגוגל</li>
+            </ul>
+          </article>
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">התאמה למנועי בינה מלאכותית</h3>
+            <ul class="value-prop-card__list">
+              <li>תוכן ברור שמערכות AI מבינות</li>
+              <li>בנייה שמגדילה סיכוי להופיע בתשובות של AI</li>
+            </ul>
+          </article>
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">התאמה למובייל</h3>
+            <ul class="value-prop-card__list">
+              <li>תצוגה מושלמת בכל מכשיר</li>
+              <li>חוויית שימוש נוחה וברורה</li>
+            </ul>
+          </article>
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">חוויית משתמש והמרות</h3>
+            <ul class="value-prop-card__list">
+              <li>ניווט פשוט וברור</li>
+              <li>הובלה לפעולה בצורה טבעית</li>
+              <li>תכנון שמגדיל פניות ומכירות</li>
+            </ul>
+          </article>
+          <article class="value-prop-card">
+            <h3 class="value-prop-card__title">עיצוב נקי ומקצועי</h3>
+            <ul class="value-prop-card__list">
+              <li>עיצוב מודרני</li>
+              <li>התאמה למיתוג העסק</li>
+              <li>יצירת אמון מהרגע הראשון</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-punch" aria-hidden="false">
+      <div class="container">
+        <p class="home-punch__text">רוב האתרים נבנים כדי להיראות טוב.<br aria-hidden="true" /><span class="home-punch__accent">אנחנו בונים אתרים כדי לייצר עבודה.</span></p>
+      </div>
+    </section>
+
     <section class="section pricing" id="pricing">
       <div class="container">
         <p class="section__eyebrow">חבילות</p>
-        <h2 class="section__title">כל סוג עסק. חבילה מתאימה.</h2>
+        <h2 class="section__title">לכל סוג עסק יש חבילה מתאימה</h2>
         <p class="section__lead">
           בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
         </p>
         <div class="cards-grid cards-grid--pricing">
+          <article class="card card--package">
+            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
+            <h3 class="card__title">דף נחיתה</h3>
+            <p class="card__price">₪1,500</p>
+            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--globe" aria-hidden="true">◎</div>
+            <h3 class="card__title">אתר תדמית</h3>
+            <p class="card__price">₪3,900</p>
+            <p class="card__desc">נוכחות אלגנטית ברשת, מספר עמודים, גלריה, פרטי קשר וחיבור לרשתות.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
           <article class="card card--package">
             <div class="card__icon card__icon--star" aria-hidden="true">★</div>
             <h3 class="card__title">אתר עסקי מתקדם</h3>
@@ -108,24 +217,11 @@
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
-            <div class="card__icon card__icon--globe" aria-hidden="true">◉</div>
-            <h3 class="card__title">אתר תדמית</h3>
-            <p class="card__price">₪3,900</p>
-            <p class="card__desc">נוכחות אלגנטית ברשת, מספר עמודים, גלריה, פרטי קשר וחיבור לרשתות.</p>
+            <div class="card__icon card__icon--cart" aria-hidden="true">🛒</div>
+            <h3 class="card__title">חנות אונליין</h3>
+            <p class="card__price">₪10,900</p>
+            <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
-          </article>
-          <article class="card card--package">
-            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
-            <h3 class="card__title">דף נחיתה</h3>
-            <p class="card__price">₪1,500</p>
-            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
-            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
-          </article>
-          <article class="card card--package card--cta-card">
-            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
-            <h3 class="card__title">לא בטוחים?</h3>
-            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
-            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
           </article>
           <article class="card card--package">
             <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
@@ -134,12 +230,11 @@
             <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
-          <article class="card card--package">
-            <div class="card__icon card__icon--cart" aria-hidden="true">🛒</div>
-            <h3 class="card__title">חנות אונליין</h3>
-            <p class="card__price">₪10,900</p>
-            <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
-            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
+            <h3 class="card__title">לא בטוחים?</h3>
+            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
+            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
           </article>
         </div>
         <p class="pricing-note" role="note">
@@ -153,7 +248,7 @@
       <div class="container">
         <p class="section__eyebrow">תיק עבודות</p>
         <h2 class="section__title" id="portfolio-preview-title">פרויקטים נבחרים</h2>
-        <p class="section__lead">שישה פרויקטים מהעבודות האחרונות שלנו. <a class="card__link" href="portfolio.html">לתיק המלא</a></p>
+        <p class="section__lead">שישה פרויקטים מהעבודות האחרונות שלנו.</p>
         <div class="portfolio-showcase">
           <article class="portfolio-tile">
             <div class="portfolio-tile__mock" aria-hidden="true"></div>
@@ -166,7 +261,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -180,7 +274,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://fests.io/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -194,7 +287,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -208,7 +300,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -222,7 +313,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -236,7 +326,6 @@
                 <span class="portfolio-tile__tag">דף נחיתה</span>
                 <a class="portfolio-tile__btn" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">עמודים ממוקדים שמטרתם אחת, להמיר</p>
             </div>
           </article>
         </div>
@@ -248,76 +337,55 @@
 
     <section class="section process" id="process">
       <div class="container">
-        <h2 class="section__title section__title--center">מאפיון להשקה – 4 שלבים</h2>
-        <p class="section__sub section__sub--center">תהליך מסודר משיחת האפיון ועד עלייה לאוויר, עם עדכונים שקופים בדרך.</p>
-        <div class="timeline">
-          <div class="timeline__track"></div>
-          <ol class="timeline__nodes">
-            <li><span class="timeline__num">01</span><span class="timeline__label">אפיון</span></li>
-            <li><span class="timeline__num">02</span><span class="timeline__label">עיצוב UI/UX</span></li>
-            <li><span class="timeline__num">03</span><span class="timeline__label">פיתוח</span></li>
-            <li><span class="timeline__num">04</span><span class="timeline__label">השקה ותמיכה</span></li>
-          </ol>
-        </div>
-        <div class="process-steps">
-          <div class="process-step">
-            <h3 class="process-step__title">אפיון</h3>
-            <p>מזהים יעדים, קהל יעד ומסרים. בונים מפת אתר ותוכן כדי שכל החלטה עיצובית וטכנית תשרת המרה.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">עיצוב UI/UX</h3>
-            <p>חוויית משתמש נקייה, היררכיה ברורה וממשק מודרני, מותאם למובייל ולמותג שלכם.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">פיתוח</h3>
-            <p>קוד נקי, ביצועים, נגישות בסיסית והכנה לקידום. אתם רואים גרסאות ביניים ומאושרים לפני השקה.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">השקה ותמיכה</h3>
-            <p>חיבור דומיין, אנליטיקס, הדרכה קצרה ותמיכה, כדי שהשקה תהיה רגועה ומקצועית.</p>
-          </div>
-        </div>
+        <h2 class="section__title section__title--center">איך זה עובד בפועל</h2>
+        <p class="section__sub section__sub--center">מהבנה עמוקה של העסק ועד עלייה לאוויר, בסדר שמשרת תוצאה.</p>
+        <ol class="process-flow" aria-label="שלבי העבודה">
+          <li class="process-flow__step">
+            <span class="process-flow__num">01</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">הבנה</span>
+              <h3 class="process-step__title">מבינים את העסק</h3>
+              <p>בשלב הראשון אנחנו מבינים את העסק שלך, מי הקהל שלך ומה חשוב לו לראות.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">02</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">מבנה</span>
+              <h3 class="process-step__title">בונים מבנה נכון</h3>
+              <p>אחרי זה בונים מבנה נכון לאתר, כזה שמוביל את הגולש בצורה טבעית וברורה.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">03</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">עיצוב ופיתוח</span>
+              <h3 class="process-step__title">עיצוב ופיתוח</h3>
+              <p>רק אז נכנסים לעיצוב ולפיתוח, כשהכל כבר מחושב ומתוכנן.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">04</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">השקה וליווי</span>
+              <h3 class="process-step__title">עלייה לאוויר וליווי</h3>
+              <p>בסוף מעלים את האתר לאוויר וממשיכים ללוות אותך גם אחרי.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="section features" id="about">
+    <section class="section section--home-why" id="about" aria-labelledby="home-why-title">
       <div class="container">
-        <div class="features__head">
-          <div class="features__rule" aria-hidden="true"></div>
-          <h2 class="section__title">לא עוד "סתם אתר".</h2>
-          <p class="section__lead">כל פרויקט נבנה סביב מטרת עסק: יותר פניות, יותר מכירות, יותר אמון, בלי קומפרומיס על איכות.</p>
-        </div>
-        <div class="cards-grid cards-grid--features">
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--pink" aria-hidden="true">◎</div>
-            <h3 class="card__title">מוקד בהמרות</h3>
-            <p class="card__desc">כפתורים, כותרות וטפסים במקומות הנכונים, כדי שהגולש יבצע את הפעולה שחשובה לכם.</p>
-          </article>
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--orange" aria-hidden="true">⚡</div>
-            <h3 class="card__title">מהירות טעינה</h3>
-            <p class="card__desc">אופטימיזציה לתמונות, קוד רזה ומדדי ליבה טובים, גוגל ומשתמשים מרוצים.</p>
-          </article>
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--purple" aria-hidden="true">📱</div>
-            <h3 class="card__title">מובייל תחילה</h3>
-            <p class="card__desc">רוב התעבורה היום מהנייד. העיצוב והפיתוח מתחילים משם ומתרחבים לדסקטופ.</p>
-          </article>
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--blue" aria-hidden="true">🔍</div>
-            <h3 class="card__title">SEO מובנה מהיסוד</h3>
-            <p class="card__desc">מבנה עמודים, כותרות, מטא וסכמות, בסיס נכון לקידום אורגני לאורך זמן.</p>
-          </article>
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--lock" aria-hidden="true">🔒</div>
-            <h3 class="card__title">האתר שלכם בבעלותכם</h3>
-            <p class="card__desc">ללא שבשביון, הקוד והנכסים בידיים שלכם, עם אפשרות לגזור ולהרחיב בעתיד.</p>
-          </article>
-          <article class="card card--feature">
-            <div class="card__icon-icon card__icon-icon--gold" aria-hidden="true">♥</div>
-            <h3 class="card__title">שקיפות מוחלטת</h3>
-            <p class="card__desc">מחירים, לו"ז ושלבים מפורטים מהיום הראשון, בלי הפתעות בסיום.</p>
-          </article>
+        <h2 class="section__title" id="home-why-title">תצטרפו לעסקים שעובדים עם סטנדרט אחר</h2>
+        <div class="prose-block prose-block--home">
+          <p>
+            כשאתם עובדים איתנו אתם יודעים בדיוק מה אתם מקבלים בלי ניחושים ובלי קיצורי דרך. אתר שבנוי נכון מהבסיס עם מבנה ברור שמרגיש טבעי לגולש, עיצוב נקי שמייצר אמון מהרגע הראשון וחוויית שימוש שעובדת חלק בכל מכשיר.
+          </p>
+          <p>
+            אנחנו שמים דגש על כל פרט קטן מהמהירות של האתר ועד חוויית משתמש ברמה הגבוה ביותר. הכל מחושב, הכל מדויק והכל נבנה כדי להחזיק לאורך זמן.
+          </p>
         </div>
       </div>
     </section>
@@ -329,9 +397,9 @@
         <div class="testimonials__grid">
           <blockquote class="testimonial">
             <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
-            <p>"התהליך היה מקצועי מהשיחה הראשונה. האתר עלה בזמן וההמרות עלו במובייל בתוך שבועות."</p>
+            <p>"התהליך היה מקצועי מהשיחה הראשונה. האתר עלה בזמן וההמרות עלו במובייל בשבועות."</p>
             <footer class="testimonial__footer">
-              <span class="testimonial__avatar" aria-hidden="true">ד</span>
+              <span class="testimonial__avatar testimonial__avatar--initials" aria-hidden="true">ד</span>
               <div>
                 <cite class="testimonial__name">דני כהן</cite>
                 <span class="testimonial__role">מנכ״ל, סטארט-אפ SaaS</span>
@@ -342,7 +410,7 @@
             <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
             <p>"סוף סוף סטודיו שמבין שאתר הוא כלי עסקי. עיצוב נקי ומהיר, בדיוק מה שהמותג שלנו היה צריך."</p>
             <footer class="testimonial__footer">
-              <span class="testimonial__avatar" aria-hidden="true">מ</span>
+              <span class="testimonial__avatar"><img class="testimonial__avatar-img" src="images/testimonials/moran-levi.jpg" alt="" width="44" height="44" loading="lazy" decoding="async" /></span>
               <div>
                 <cite class="testimonial__name">מורן לוי</cite>
                 <span class="testimonial__role">שיווק, קמעונאות</span>
@@ -353,7 +421,7 @@
             <div class="testimonial__stars" aria-label="5 מתוך 5 כוכבים">★★★★★</div>
             <p>"קיבלנו ליווי אמיתי אחרי ההשקה. שינויים קטנים והדרכה, מרגישים שיש לנו שותף."</p>
             <footer class="testimonial__footer">
-              <span class="testimonial__avatar" aria-hidden="true">י</span>
+              <span class="testimonial__avatar"><img class="testimonial__avatar-img" src="images/testimonials/yossi-abraham.jpg" alt="" width="44" height="44" loading="lazy" decoding="async" /></span>
               <div>
                 <cite class="testimonial__name">יוסי אברהם</cite>
                 <span class="testimonial__role">בעל מסעדת שף</span>
@@ -366,12 +434,12 @@
 
     <section class="section cta-block" id="contact">
       <div class="container cta-block__inner">
-        <p class="section__eyebrow">מוכנים להתחיל?</p>
-        <h2 class="section__title section__title--cta">האתר שלכם מחכה להיבנות.</h2>
-        <p class="cta-block__sub">שיחת ייעוץ ראשונה, חינם לחלוטין, ללא התחייבות.</p>
+        <h2 class="section__title section__title--cta">אם אתה רוצה אתר שבאמת עובד</h2>
+        <p class="cta-block__sub">כנראה שאתה כבר מבין שזה לא רק עניין של עיצוב, אלא של איך הכל מתחבר ביחד. אם זה מדבר אליך, אנחנו כאן לבנות את זה נכון.</p>
         <div class="cta-block__actions">
+          <a class="btn btn--primary btn--glow js-open-contact-modal" href="#">דבר איתנו</a>
           <a class="btn btn--outline" href="services.html">לצפות במחירים</a>
-          <a class="btn btn--primary btn--glow btn--phone" href="tel:+972534321792">
+          <a class="btn btn--outline btn--phone" href="tel:+972534321792">
             <span class="btn__phone-icon" aria-hidden="true">📞</span> 053-432-1792
           </a>
         </div>
@@ -383,7 +451,7 @@
     <div class="container footer__grid">
       <div class="footer__col">
         <div class="footer__brand" role="img" aria-label="לוגו המותג"><img class="footer__brand-logo" src="images/atario-logo.png" alt="" /></div>
-        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוהה ביותר.</p>
+        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוה ביותר.</p>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">שירותים</h4>
@@ -401,6 +469,7 @@
           <li><a href="index.html">בית</a></li>
           <li><a href="portfolio.html">תיק עבודות</a></li>
           <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="accessibility.html">הצהרת נגישות</a></li>
           <li><a class="js-open-contact-modal" href="#">צרו קשר</a></li>
         </ul>
       </div>
@@ -409,7 +478,7 @@
         <ul class="footer__contact">
           <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
           <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
-          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+          <li><span aria-hidden="true">🕐</span> א׳ עד ה׳, 09:00 עד 18:00</li>
         </ul>
       </div>
     </div>

@@ -168,7 +168,6 @@
       '  <div class="contact-modal__divider" aria-hidden="true"></div>',
       '  <div class="contact-modal__direct">',
       "    <a href=\"tel:+972534321792\">התקשרו: 053-432-1792</a>",
-      "    <a href=\"mailto:shoamdudik1123@gmail.com\">shoamdudik1123@gmail.com</a>",
       "  </div>",
       "</div>",
     ].join("");
@@ -242,4 +241,45 @@
       closeContactModal();
     }
   });
+})();
+
+(function () {
+  var el = document.getElementById("page-loader");
+  if (!el) return;
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var start = Date.now();
+  var minMs = reduce ? 0 : 280;
+
+  function removeEl() {
+    if (el && el.parentNode) el.parentNode.removeChild(el);
+  }
+
+  function finish() {
+    el.setAttribute("aria-busy", "false");
+    if (reduce) {
+      removeEl();
+      return;
+    }
+    el.classList.add("is-done");
+    el.addEventListener(
+      "transitionend",
+      function (e) {
+        if (e.propertyName === "opacity") removeEl();
+      },
+      { once: true }
+    );
+    window.setTimeout(removeEl, 700);
+  }
+
+  function go() {
+    var wait = Math.max(0, minMs - (Date.now() - start));
+    window.setTimeout(finish, wait);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", go);
+  } else {
+    go();
+  }
 })();

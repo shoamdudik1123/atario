@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="portfolio-page">
+  <script src="a11y.js"></script>
+  <div id="page-loader" class="page-loader" aria-busy="true" aria-live="polite">
+    <div class="page-loader__panel">
+      <div class="page-loader__orbit" aria-hidden="true"></div>
+      <div class="page-loader__brand">Atario</div>
+      <div class="page-loader__hint">טוען…</div>
+    </div>
+  </div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
@@ -30,7 +38,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="page-hero">
       <div class="container">
         <h1 class="page-hero__title">תיק עבודות</h1>
@@ -86,7 +94,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -100,7 +107,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://fests.io/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -114,7 +120,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -128,7 +133,6 @@
                 <span class="portfolio-tile__tag">מערכות ופורטלים</span>
                 <a class="portfolio-tile__btn" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -142,7 +146,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -156,7 +159,6 @@
                 <span class="portfolio-tile__tag">דף נחיתה</span>
                 <a class="portfolio-tile__btn" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">עמודים ממוקדים שמטרתם אחת, להמיר</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -170,7 +172,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://thaimarry.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -184,7 +185,6 @@
                 <span class="portfolio-tile__tag">אתר תדמית</span>
                 <a class="portfolio-tile__btn" href="https://wallnights.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
             </div>
           </article>
           <article class="portfolio-tile">
@@ -198,7 +198,6 @@
                 <span class="portfolio-tile__tag">אתר עסקי מתקדם</span>
                 <a class="portfolio-tile__btn" href="https://balanceil.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
               </div>
-              <p class="portfolio-tile__hint">אתרי עסק ורשתות עם מבנה מקצועי, חוויית משתמש וביצועים גבוהים</p>
             </div>
           </article>
         </div>
@@ -231,6 +230,7 @@
           <li><a href="index.html">בית</a></li>
           <li><a href="portfolio.html">תיק עבודות</a></li>
           <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="accessibility.html">הצהרת נגישות</a></li>
           <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
         </ul>
       </div>
@@ -239,7 +239,7 @@
         <ul class="footer__contact">
           <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
           <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
-          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+          <li><span aria-hidden="true">🕐</span> א׳ עד ה׳, 09:00 עד 18:00</li>
         </ul>
       </div>
     </div>

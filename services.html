@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <script src="a11y.js"></script>
+  <div id="page-loader" class="page-loader" aria-busy="true" aria-live="polite">
+    <div class="page-loader__panel">
+      <div class="page-loader__orbit" aria-hidden="true"></div>
+      <div class="page-loader__brand">Atario</div>
+      <div class="page-loader__hint">טוען…</div>
+    </div>
+  </div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
   <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
@@ -30,7 +38,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="page-hero">
       <div class="container">
         <h1 class="page-hero__title">שירותים ומחירים</h1>
@@ -41,16 +49,16 @@
     <section class="section pricing">
       <div class="container">
         <p class="section__eyebrow">חבילות</p>
-        <h2 class="section__title">כל סוג עסק. חבילה מתאימה.</h2>
+        <h2 class="section__title">לכל סוג עסק יש חבילה מתאימה</h2>
         <p class="section__lead">
           בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
         </p>
         <div class="cards-grid cards-grid--pricing">
           <article class="card card--package">
-            <div class="card__icon card__icon--star" aria-hidden="true">★</div>
-            <h3 class="card__title">אתר עסקי מתקדם</h3>
-            <p class="card__price">₪7,500</p>
-            <p class="card__desc">אתר מלא למותג שרוצה להתבלט, עמודים מרובים, טפסים, אינטגרציות וביצועים גבוהים.</p>
+            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
+            <h3 class="card__title">דף נחיתה</h3>
+            <p class="card__price">₪1,500</p>
+            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
@@ -61,23 +69,10 @@
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
-            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
-            <h3 class="card__title">דף נחיתה</h3>
-            <p class="card__price">₪1,500</p>
-            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
-            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
-          </article>
-          <article class="card card--package card--cta-card">
-            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
-            <h3 class="card__title">לא בטוחים?</h3>
-            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
-            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
-          </article>
-          <article class="card card--package">
-            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
-            <h3 class="card__title">מערכות ופורטלים</h3>
-            <p class="card__price">₪17,900</p>
-            <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
+            <div class="card__icon card__icon--star" aria-hidden="true">★</div>
+            <h3 class="card__title">אתר עסקי מתקדם</h3>
+            <p class="card__price">₪7,500</p>
+            <p class="card__desc">אתר מלא למותג שרוצה להתבלט, עמודים מרובים, טפסים, אינטגרציות וביצועים גבוהים.</p>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
@@ -86,6 +81,19 @@
             <p class="card__price">₪10,900</p>
             <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
+            <h3 class="card__title">מערכות ופורטלים</h3>
+            <p class="card__price">₪17,900</p>
+            <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
+            <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
+          </article>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
+            <h3 class="card__title">לא בטוחים?</h3>
+            <p class="card__desc card__desc--flush">נשמח לשמוע על העסק ולהמליץ על המסלול הנכון, בלי מחויבות.</p>
+            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">תיאום שיחה חינם</a>
           </article>
         </div>
         <p class="pricing-note" role="note">
@@ -97,35 +105,42 @@
 
     <section class="section process">
       <div class="container">
-        <h2 class="section__title section__title--center">מאפיון להשקה – 4 שלבים</h2>
+        <h2 class="section__title section__title--center">מאפיון להשקה: ארבעה שלבים</h2>
         <p class="section__sub section__sub--center">תהליך מסודר משיחת האפיון ועד עלייה לאוויר, עם עדכונים שקופים בדרך.</p>
-        <div class="timeline">
-          <div class="timeline__track"></div>
-          <ol class="timeline__nodes">
-            <li><span class="timeline__num">01</span><span class="timeline__label">אפיון</span></li>
-            <li><span class="timeline__num">02</span><span class="timeline__label">עיצוב UI/UX</span></li>
-            <li><span class="timeline__num">03</span><span class="timeline__label">פיתוח</span></li>
-            <li><span class="timeline__num">04</span><span class="timeline__label">השקה ותמיכה</span></li>
-          </ol>
-        </div>
-        <div class="process-steps">
-          <div class="process-step">
-            <h3 class="process-step__title">אפיון</h3>
-            <p>מזהים יעדים, קהל יעד ומסרים. בונים מפת אתר ותוכן כדי שכל החלטה עיצובית וטכנית תשרת המרה.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">עיצוב UI/UX</h3>
-            <p>חוויית משתמש נקייה, היררכיה ברורה וממשק מודרני, מותאם למובייל ולמותג שלכם.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">פיתוח</h3>
-            <p>קוד נקי, ביצועים, נגישות בסיסית והכנה לקידום. אתם רואים גרסאות ביניים ומאושרים לפני השקה.</p>
-          </div>
-          <div class="process-step">
-            <h3 class="process-step__title">השקה ותמיכה</h3>
-            <p>חיבור דומיין, אנליטיקס, הדרכה קצרה ותמיכה, כדי שהשקה תהיה רגועה ומקצועית.</p>
-          </div>
-        </div>
+        <ol class="process-flow" aria-label="שלבי העבודה">
+          <li class="process-flow__step">
+            <span class="process-flow__num">01</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">אפיון</span>
+              <h3 class="process-step__title">אפיון</h3>
+              <p>מזהים יעדים, קהל יעד ומסרים. בונים מפת אתר ותוכן כדי שכל החלטה עיצובית וטכנית תשרת המרה.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">02</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">עיצוב UI/UX</span>
+              <h3 class="process-step__title">עיצוב UI/UX</h3>
+              <p>חוויית משתמש נקייה, היררכיה ברורה וממשק מודרני, מותאם למובייל ולמותג שלכם.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">03</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">פיתוח</span>
+              <h3 class="process-step__title">פיתוח</h3>
+              <p>קוד נקי, ביצועים, נגישות בסיסית והכנה לקידום. אתם רואים גרסאות ביניים ומאושרים לפני השקה.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">04</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">השקה ותמיכה</span>
+              <h3 class="process-step__title">השקה ותמיכה</h3>
+              <p>חיבור דומיין, אנליטיקס, הדרכה קצרה ותמיכה, כדי שהשקה תהיה רגועה ומקצועית.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -164,6 +179,7 @@
           <li><a href="index.html">בית</a></li>
           <li><a href="portfolio.html">תיק עבודות</a></li>
           <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="accessibility.html">הצהרת נגישות</a></li>
           <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
         </ul>
       </div>
@@ -172,7 +188,7 @@
         <ul class="footer__contact">
           <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
           <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
-          <li><span aria-hidden="true">🕐</span> א׳–ה׳ 09:00–18:00</li>
+          <li><span aria-hidden="true">🕐</span> א׳ עד ה׳, 09:00 עד 18:00</li>
         </ul>
       </div>
     </div>
