@@ -283,3 +283,50 @@
     go();
   }
 })();
+
+(function () {
+  function formatShekels(n) {
+    return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function applyBilling(section, mode) {
+    section.querySelectorAll(".card__price[data-monthly]").forEach(function (priceEl) {
+      var m = parseInt(priceEl.getAttribute("data-monthly"), 10);
+      if (isNaN(m)) return;
+      var disp = priceEl.querySelector(".pricing-price__display");
+      var suf = priceEl.querySelector(".pricing-price__suffix");
+      if (!disp) return;
+      if (mode === "yearly") {
+        disp.textContent = "₪" + formatShekels(m * 10);
+        if (suf) suf.textContent = "/ שנה · שווה ערך 10 חודשים";
+      } else {
+        disp.textContent = "₪" + formatShekels(m);
+        if (suf) suf.textContent = "/ חודש";
+      }
+    });
+  }
+
+  function bindSection(section) {
+    var btns = section.querySelectorAll(".pricing-billing__btn");
+    if (!btns.length) return;
+
+    function setMode(mode) {
+      btns.forEach(function (b) {
+        var on = b.getAttribute("data-billing-mode") === mode;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      applyBilling(section, mode);
+    }
+
+    btns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setMode(btn.getAttribute("data-billing-mode") || "monthly");
+      });
+    });
+
+    setMode("monthly");
+  }
+
+  document.querySelectorAll(".pricing--premium[data-pricing-toggle]").forEach(bindSection);
+})();

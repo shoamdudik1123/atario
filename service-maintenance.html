@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="hRQmEfLe9dLPOgIsUR1_Qfo4glDJsuRd64fQNtCLgOk" />
+  <title>תחזוקת אתרים ותפעול חודשי — מחירון Atario</title>
+  <link rel="preload" href="fonts/Birzia-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Birzia-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script src="a11y.js"></script>
+  <div id="page-loader" class="page-loader" aria-busy="true" aria-live="polite">
+    <div class="page-loader__panel">
+      <div class="page-loader__orbit" aria-hidden="true"></div>
+      <div class="page-loader__brand">Atario</div>
+      <div class="page-loader__hint">טוען…</div>
+    </div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--tr" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--bl" aria-hidden="true"></div>
+  <div class="bg-cursor-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="עמוד הבית"><img class="logo__img" src="images/atario-logo.png" alt="" /></a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a href="service-social.html">ניהול סושיאל</a>
+        <a href="service-chatbot.html">צ׳אטבוט AI</a>
+        <a href="service-seo-content.html">תוכן SEO</a>
+        <a href="service-maintenance.html" aria-current="page">תחזוקת אתרים</a>
+        <a href="services.html#websites-pricing">בניית אתרים</a>
+        <a href="offers.html">מבצעים וחבילות</a>
+        <a href="about.html">מי אנחנו</a>
+        <a class="nav__mobile-cta js-open-contact-modal" href="#">יצירת קשר</a>
+      </nav>
+      <a class="btn btn--outline header__cta js-open-contact-modal" href="#">יצירת קשר</a>
+      <button type="button" class="nav-toggle" aria-label="תפריט" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">תחזוקת אתרים ותפעול חודשי</h1>
+        <p class="page-hero__lead">האתר לא נגמר בהשקה: עדכוני מערכת, גיבויים, ניטור זמינות ותיקונים קטנים שומרים על בטיחות ומהירות. בוחרים רמת שירות לפי גודל העסק ואיך הרבה אתם נוגעים בתוכן.</p>
+      </div>
+    </div>
+
+    <section class="section pricing pricing--premium" id="pricing" data-pricing-toggle>
+      <div class="container">
+        <div class="pricing-head pricing-head--center">
+          <p class="section__eyebrow">מחירון</p>
+          <h2 class="section__title">חבילות תחזוקה חודשיות</h2>
+          <p class="section__lead">מחיר לחודש. התחייבות ל-3 חודשים מקנה הנחה — ראו גם בעמוד המבצעים.</p>
+          <div class="pricing-billing" role="group" aria-label="תשלום חודשי או שנתי">
+            <div class="pricing-billing__track">
+              <button type="button" class="pricing-billing__btn is-active" data-billing-mode="monthly" aria-pressed="true">חודשי</button>
+              <button type="button" class="pricing-billing__btn" data-billing-mode="yearly" aria-pressed="false">שנתי <span class="pricing-billing__pill" aria-hidden="true">2 חוד׳ מתנה</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-grid cards-grid--pricing">
+          <article class="card card--package">
+            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
+            <h3 class="card__title">בסיס</h3>
+            <p class="card__price" data-monthly="290"><span class="pricing-price__display">₪290</span> <span class="pricing-card__period pricing-price__suffix">/ חודש</span></p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>גיבוי שבועי</li>
+              <li>עדכונים חודשיים</li>
+              <li>ניטור זמינות</li>
+              <li>מענה לתקלות קריטיות במייל</li>
+              <li>עד שעה תיקונים קטנים (מצטבר)</li>
+            </ul>
+            <a class="card__link js-open-contact-modal" href="#">להרשמה</a>
+          </article>
+          <article class="card card--package card--pricing-highlight">
+            <span class="pricing-card__badge">מומלץ</span>
+            <div class="card__icon card__icon--globe" aria-hidden="true">◎</div>
+            <h3 class="card__title">עסקי</h3>
+            <p class="card__price" data-monthly="590"><span class="pricing-price__display">₪590</span> <span class="pricing-card__period pricing-price__suffix">/ חודש</span></p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>כל מה שבחבילת בסיס</li>
+              <li>עד 2 שעות שינויי תוכן / טפסים</li>
+              <li>דוח סטטוס חודשי קצר</li>
+              <li>עדיפות בתור תמיכה</li>
+            </ul>
+            <a class="card__link js-open-contact-modal" href="#">להרשמה</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--star" aria-hidden="true">★</div>
+            <h3 class="card__title">פרו</h3>
+            <p class="card__price" data-monthly="990"><span class="pricing-price__display">₪990</span> <span class="pricing-card__period pricing-price__suffix">/ חודש</span></p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>כל מה שבעסקי</li>
+              <li>עד 4 שעות פיתוח / תוכן</li>
+              <li>סריקת אבטחה בסיסית</li>
+              <li>המלצות שיפור מהירות רבעוני</li>
+            </ul>
+            <a class="card__link js-open-contact-modal" href="#">להרשמה</a>
+          </article>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--chat" aria-hidden="true">💬</div>
+            <h3 class="card__title">חנות או מערכת כבדה</h3>
+            <p class="card__desc card__desc--flush">מחיר לפי נפח הזמנות, תוספים וסביבה.</p>
+            <a class="btn btn--primary btn--block js-open-contact-modal" href="#">הצעה מותאמת</a>
+          </article>
+        </div>
+        <p class="pricing-note" role="note">
+          <span class="pricing-note__text">דומיין ואחסון יכולים להישאר אצלכם או לרכוש דרכנו — יפורט בהסכם. במחלף ״שנתי״: תשלום מקדם שווה ערך ל־10 חודשים (2 חודשים מתנה), בכפוף להסכם.</span>
+          <span class="pricing-note__text pricing-note__text--highlight">המחירים כוללים מע״מ.</span>
+        </p>
+        <p class="section__lead section__lead--center"><a class="card__link" href="services.html">← חזרה לכל השירותים</a> · <a class="card__link" href="offers.html">ריטיינר שנתי במבצע</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="maint-portfolio" aria-labelledby="maint-portfolio-title">
+      <div class="container">
+        <p class="section__eyebrow">תיק עבודות</p>
+        <h2 class="section__title" id="maint-portfolio-title">אתרים שאנחנו מתחזקים ובנינו</h2>
+        <p class="section__lead">אותו תיק פרויקטים — בתצוגה של דשבורד תחזוקה. ככה זה נראה מבפנים: זמינות, גיבוי, SSL ופלטפורמה.</p>
+
+        <div class="managed-sites" role="table" aria-label="אתרים בתחזוקה פעילה">
+          <div class="managed-sites__head" role="row">
+            <span role="columnheader">אתר</span>
+            <span role="columnheader">פלטפורמה</span>
+            <span role="columnheader">סטטוס תחזוקה</span>
+            <span role="columnheader" class="managed-sites__head-link">צפייה</span>
+          </div>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/01.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">ספא ראש ישראל</span>
+                <span class="managed-site__domain">headspa.co.il</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>WordPress</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--backup">גיבוי יומי</li>
+            </ul>
+            <a class="managed-site__link" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/02.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">Fests</span>
+                <span class="managed-site__domain">fests.io</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>Custom</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--monitor">ניטור 24/7</li>
+            </ul>
+            <a class="managed-site__link" href="https://fests.io/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/03.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">Buyz</span>
+                <span class="managed-site__domain">buyz.co.il</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>Custom</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--backup">גיבוי יומי</li>
+            </ul>
+            <a class="managed-site__link" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/04.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">Seato</span>
+                <span class="managed-site__domain">seato.ai</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>Next.js</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--monitor">ניטור 24/7</li>
+            </ul>
+            <a class="managed-site__link" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/07.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">REATS</span>
+                <span class="managed-site__domain">reats.co.il</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>WordPress</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--backup">גיבוי יומי</li>
+            </ul>
+            <a class="managed-site__link" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/06.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">אפק דודיק</span>
+                <span class="managed-site__domain">afekdudik.co.il</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>HTML/CSS</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--monitor">ניטור 24/7</li>
+            </ul>
+            <a class="managed-site__link" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/05.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">ThaiMarry</span>
+                <span class="managed-site__domain">thaimarry.co.il</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>WordPress</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--backup">גיבוי יומי</li>
+            </ul>
+            <a class="managed-site__link" href="https://thaimarry.co.il/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/08.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">וואלנייטס</span>
+                <span class="managed-site__domain">wallnights.com</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>WordPress</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--monitor">ניטור 24/7</li>
+            </ul>
+            <a class="managed-site__link" href="https://wallnights.com/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="managed-site" role="row">
+            <div class="managed-site__brand" role="cell">
+              <div class="managed-site__thumb"><img src="images/portfolio/09.jpg" alt="" loading="lazy" decoding="async" onerror="this.parentElement.classList.add('is-fallback');this.remove()" /></div>
+              <div class="managed-site__id">
+                <span class="managed-site__name">BalanceIL</span>
+                <span class="managed-site__domain">balanceil.com</span>
+              </div>
+            </div>
+            <span class="managed-site__platform" role="cell"><span class="managed-site__platform-dot"></span>Custom</span>
+            <ul class="managed-site__status" role="cell" aria-label="סטטוסי תחזוקה">
+              <li class="managed-status managed-status--up"><span class="managed-status__dot"></span>אונליין</li>
+              <li class="managed-status managed-status--ssl">SSL</li>
+              <li class="managed-status managed-status--backup">גיבוי יומי</li>
+            </ul>
+            <a class="managed-site__link" href="https://balanceil.com/" target="_blank" rel="noopener noreferrer" role="cell">צפייה<span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <p class="section__lead section__lead--center managed-sites__foot">
+          <a class="card__link" href="services.html#websites-portfolio">לתצוגה הקלאסית של תיק העבודות</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="maint-includes">
+      <div class="container">
+        <h2 class="section__title" id="maint-includes">מה כלול (לפי חבילה)</h2>
+        <div class="prose-block">
+          <ul>
+            <li>גיבויים מתוזמנים ושחזור בסיסי במידת הצורך</li>
+            <li>עדכוני ליבה / תבנית / תוספים כשהאתר בפלטפורמה תומכת</li>
+            <li>ניטור זמינות פשוט והתראה במייל כשיש תקלה</li>
+            <li>שעות עבודה לשינויי תוכן או טפסים (בחבילות הגבוהות)</li>
+            <li>בדיקות ביצועים ואבטחה בסיסיות (בפרו)</li>
+          </ul>
+          <p>אתרים שאינם בנויים אצלנו — נדרש סקירה קצרה לפני התחייבות, כדי להבין גישה לשרת ולמערכת.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="maint-risk-title">
+      <div class="container">
+        <p class="section__eyebrow">סיכון מנוהל</p>
+        <h2 class="section__title" id="maint-risk-title">למה חברות משלמות על תחזוקה חודשית</h2>
+        <p class="section__lead section__lead--center">באתרי WordPress ומערכות דומות מקובל להציג SLA, גיבויים ועדכוני אבטחה — כי פרצה או נפילה עולות הרבה יותר מתחזוקה שנתית.</p>
+        <div class="selling-split selling-split--spaced">
+          <div class="selling-split__box">
+            <h3 class="selling-split__title">מתאים במיוחד אם…</h3>
+            <ul>
+              <li>האתר הוא מקור הכנסה או איסוף לידים מרכזי</li>
+              <li>אין אצלכם IT פנימי שעוקב אחרי עדכוני ליבה</li>
+              <li>רוצים גיבוי שאפשר לשחזר אחרי טעות אנוש או פריצה</li>
+              <li>צריכים שינויים קטנים בטפסים או בטקסטים בלי לפתוח פרויקט כל פעם</li>
+            </ul>
+          </div>
+          <div class="selling-split__box">
+            <h3 class="selling-split__title">מה לא נכלל בברירת המחדל</h3>
+            <ul>
+              <li>פיתוח פיצ׳רים גדולים או עיצוב מחדש — נפרד להצעה</li>
+              <li>תוכן שיווקי חדש באורך מאמר — ראו שירות תוכן</li>
+              <li>אחריות על שרת צד ג׳ שלא נותן לנו גישה</li>
+            </ul>
+          </div>
+        </div>
+        <div class="trust-chips">
+          <span class="trust-chip">גיבויים</span>
+          <span class="trust-chip">עדכונים</span>
+          <span class="trust-chip">ניטור זמינות</span>
+          <span class="trust-chip">שעות שינוי (בחבילות גבוהות)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" aria-labelledby="maint-value-title">
+      <div class="container">
+        <div class="features__head">
+          <div class="features__rule" aria-hidden="true"></div>
+          <h2 class="section__title" id="maint-value-title">מה מקבלים כמו אצל ספקי Care טובים</h2>
+          <p class="section__lead">שקט, תיעוד קצר אחרי כל פעולה חשובה, ודוח סטטוס כשצריך.</p>
+        </div>
+        <div class="cards-grid cards-grid--features">
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--lock" aria-hidden="true">🛡</div>
+            <h3 class="card__title">הקטנת משטח תקיפה</h3>
+            <p class="card__desc">עדכונים סגורים ידועים כנקודת חולשה כשלא מטפלים בהם.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--blue" aria-hidden="true">💾</div>
+            <h3 class="card__title">גיבוי לפני שינוי</h3>
+            <p class="card__desc">לפני עדכון רגיש — גיבוי נקודתי כדי לחזור אחורה.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--pink" aria-hidden="true">⏱</div>
+            <h3 class="card__title">זמינות</h3>
+            <p class="card__desc">ניטור בסיסי והתראה — כדי לדעת שהאתר למטה לפני הלקוחות.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--gold" aria-hidden="true">📋</div>
+            <h3 class="card__title">שקיפות</h3>
+            <p class="card__desc">בחבילות הגבוהות — דוח קצר: מה בוצע, מה ממתין.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="maint-process-title">
+      <div class="container">
+        <p class="section__eyebrow">תהליך</p>
+        <h2 class="section__title section__title--center" id="maint-process-title">איך מתחילים ליווי</h2>
+        <ol class="process-flow" aria-label="שלבי תחזוקה">
+          <li class="process-flow__step">
+            <span class="process-flow__num">01</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">אודיט</span>
+              <h3 class="process-step__title">סקירת אתר</h3>
+              <p>פלטפורמה, תוספים, אחסון, גישות — כדי לדעת מה מטפלים.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">02</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">הסכם</span>
+              <h3 class="process-step__title">SLA וציפיות</h3>
+              <p>זמני תגובה, שעות כלולות, ומה נחשב שינוי גדול.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">03</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">שגרה</span>
+              <h3 class="process-step__title">חודש קבוע</h3>
+              <p>גיבוי, עדכונים, בדיקות קצרות, וניצול שעות הכלולות.</p>
+            </div>
+          </li>
+          <li class="process-flow__step">
+            <span class="process-flow__num">04</span>
+            <div class="process-flow__body">
+              <span class="process-flow__eyebrow">שיפור</span>
+              <h3 class="process-step__title">המלצות רבעון</h3>
+              <p>בפרו — נקודות לשיפור מהירות או יציבות.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="maint-faq-title">
+      <div class="container">
+        <p class="section__eyebrow">שאלות נפוצות</p>
+        <h2 class="section__title section__title--center" id="maint-faq-title">תחזוקת אתרים</h2>
+        <div class="faq-list">
+          <details>
+            <summary>האם אתם מארחים את האתר?</summary>
+            <p>אפשר להשאיר אצל ספק קיים או לרכוש אחסון דרכנו — יתואם בבריף.</p>
+          </details>
+          <details>
+            <summary>מה קורה בשבתות וחגים?</summary>
+            <p>תקלות קריטיות — לפי ההסכם. שינויי תוכן שאינן דחופות — בימי עבודה.</p>
+          </details>
+          <details>
+            <summary>כמה מהר מגיבים?</summary>
+            <p>בחבילת בסיס בדרך כלל עד יום עסקים לפניות רגילות; בפרו — עדיפות בתור.</p>
+          </details>
+          <details>
+            <summary>אפשר רק גיבויים בלי עדכונים?</summary>
+            <p>ניתן להרכיב חבילה מצומצמת — פנו ונתאים.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="maint-cross-title">
+      <div class="container">
+        <p class="section__eyebrow">משלבים</p>
+        <h2 class="section__title" id="maint-cross-title">נפגש הרבה פעמים יחד עם</h2>
+        <div class="cards-grid cards-grid--features">
+          <article class="card card--package">
+            <h3 class="card__title">צ׳אטבוט</h3>
+            <p class="card__desc service-cross__mini">אחרי התקנה — לוודא שהסקריפט נשאר תקין אחרי עדכונים.</p>
+            <a class="card__link" href="service-chatbot.html">צ׳אטבוט</a>
+          </article>
+          <article class="card card--package">
+            <h3 class="card__title">תוכן חדש</h3>
+            <p class="card__desc service-cross__mini">מאמרים שמעלים לבלוג — ניתן לשלב בשעות הכלולות או בריטיינר.</p>
+            <a class="card__link" href="service-seo-content.html">תוכן SEO</a>
+          </article>
+          <article class="card card--package">
+            <h3 class="card__title">דיל שנתי</h3>
+            <p class="card__desc service-cross__mini">תחזוקת עסקי לשנה במחיר מקדם.</p>
+            <a class="card__link" href="offers.html">מבצעים</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-punch" aria-hidden="false">
+      <div class="container">
+        <p class="home-punch__text">תחזוקה היא לא ״בזבוז״ כשהאתר מרוויח.<br aria-hidden="true" /><span class="home-punch__accent">היא ביטוח שבועי שמונע כיבוי עסק לילי.</span></p>
+      </div>
+    </section>
+
+    <section class="section cta-block">
+      <div class="container cta-block__inner">
+        <p class="section__eyebrow">מתחילים</p>
+        <h2 class="section__title section__title--cta">רוצים שקט בנוגע לאתר?</h2>
+        <p class="cta-block__sub">שלחו כתובת אתר ופלטפורמה (וורדפרס / אחר) — נאשר התאמה.</p>
+        <div class="cta-block__actions">
+          <a class="btn btn--primary btn--glow js-open-contact-modal" href="#">יצירת קשר</a>
+          <a class="btn btn--outline" href="index.html">עמוד הבית</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand" role="img" aria-label="לוגו המותג"><img class="footer__brand-logo" src="images/atario-logo.png" alt="" /></div>
+        <p class="footer__text">דיוק בפרטים הקטנים, חשיבה אסטרטגית וביצוע ברמה הגבוהה ביותר.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">שירותים</h4>
+        <ul class="footer__links">
+          <li><a href="service-social.html">ניהול סושיאל</a></li>
+          <li><a href="service-chatbot.html">צ׳אטבוט AI</a></li>
+          <li><a href="service-seo-content.html">תוכן SEO</a></li>
+          <li><a href="service-maintenance.html">תחזוקת אתרים</a></li>
+          <li><a href="services.html#websites-pricing">בניית אתרים</a></li>
+          <li><a href="services.html#websites-portfolio">תיק פרויקטים</a></li>
+          <li><a href="offers.html">מבצעים וחבילות</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">ניווט</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="services.html">שירותים</a></li>
+          <li><a href="offers.html">מבצעים</a></li>
+          <li><a href="about.html">מי אנחנו</a></li>
+          <li><a href="accessibility.html">הצהרת נגישות</a></li>
+          <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">צרו קשר</h4>
+        <ul class="footer__contact">
+          <li><span aria-hidden="true">📞</span> <a href="tel:+972534321792">053-432-1792</a></li>
+          <li><span aria-hidden="true">✉</span> <a href="mailto:shoamdudik1123@gmail.com">shoamdudik1123@gmail.com</a></li>
+          <li><span aria-hidden="true">🕐</span> א׳ עד ה׳, 09:00 עד 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar container">
+      <p class="footer__copy"><span>© 2026</span> <img class="footer__copy-logo" src="images/atario-logo.png" alt="" /> <span>כל הזכויות שמורות.</span></p>
+      <p class="footer__credit">בונים מתוך תשוקה ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

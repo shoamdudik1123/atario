@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="hRQmEfLe9dLPOgIsUR1_Qfo4glDJsuRd64fQNtCLgOk" />
-  <title>שירותים ומחירים, האתר שלך ברמה אחרת</title>
+  <title>שירותים ומחירים — Atario</title>
   <link rel="preload" href="fonts/Birzia-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/Birzia-Bold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="services-page">
   <script src="a11y.js"></script>
   <div id="page-loader" class="page-loader" aria-busy="true" aria-live="polite">
     <div class="page-loader__panel">
@@ -27,8 +27,12 @@
     <div class="container header__inner">
       <a class="logo" href="index.html" aria-label="עמוד הבית"><img class="logo__img" src="images/atario-logo.png" alt="" /></a>
       <nav class="nav" aria-label="ניווט ראשי">
-        <a href="services.html" aria-current="page">שירותים ומחירים</a>
-        <a href="portfolio.html">תיק עבודות</a>
+        <a href="service-social.html">ניהול סושיאל</a>
+        <a href="service-chatbot.html">צ׳אטבוט AI</a>
+        <a href="service-seo-content.html">תוכן SEO</a>
+        <a href="service-maintenance.html">תחזוקת אתרים</a>
+        <a href="services.html#websites-pricing" aria-current="page">בניית אתרים</a>
+        <a href="offers.html">מבצעים וחבילות</a>
         <a href="about.html">מי אנחנו</a>
         <a class="nav__mobile-cta js-open-contact-modal" href="#">יצירת קשר</a>
       </nav>
@@ -43,51 +47,241 @@
     <div class="page-hero">
       <div class="container">
         <h1 class="page-hero__title">שירותים ומחירים</h1>
-        <p class="page-hero__lead">חבילות ברורות, ללא אותיות קטנות. בוחרים מסלול, מתקדמים עם אפיון, ומגיעים להשקה עם ליווי מלא.</p>
+        <p class="page-hero__lead">סושיאל, צ׳אטבוט AI, תוכן SEO, תחזוקת אתרים ובניית אתרים — לכל תחום עמוד ומחירון משלו. כאן תמצאו גם את חבילות בניית האתרים המלאות.</p>
       </div>
     </div>
 
-    <section class="section pricing">
+    <div class="marquee-wrap" id="clients-marquee">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+        <div class="marquee__group">
+          <span>סטודיו אדריכלות</span><span>בוקס טרי</span><span>מרכז רפואי</span><span>סטייל תיקים</span><span>נדל״ן לוי</span><span>נובה טק</span><span>קפה ראשון</span><span>יוגה וולנס</span><span>מסעדת השף</span><span>קוסמטיקה נקה</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="websites-portfolio" aria-labelledby="websites-portfolio-title">
       <div class="container">
-        <p class="section__eyebrow">חבילות</p>
-        <h2 class="section__title">לכל סוג עסק יש חבילה מתאימה</h2>
-        <p class="section__lead">
-          בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
+        <p class="section__eyebrow">תיק פרויקטים</p>
+        <h2 class="section__title" id="websites-portfolio-title">מה בנינו לאחרונים</h2>
+        <p class="section__lead">מבחר פרויקטים נבחרים שממחישים איך נראה אתר ברמה אחרת, בעיצוב, בחשיבה ובביצוע.</p>
+        <div class="portfolio-intro">
+          <p>ממגוון פרויקטים, מאתרי תדמית ועד מערכות חכמות. כל פרויקט נבנה סביב מטרה עסקית ברורה ותוצאה מדויקת. כאן תוכלו לראות איך רעיונות הופכים לאתרים שעובדים באמת. אנחנו לא רק מעצבים, אנחנו בונים חוויות דיגיטליות שמייצרות תנועה, עניין ותוצאות. כל אתר שאתם רואים כאן נבנה בהתאמה מלאה ללקוח, עם חשיבה על חוויית משתמש, עיצוב מודרני וביצועים גבוהים.</p>
+        </div>
+        <div class="portfolio-legend" aria-label="סוגי פרויקטים בתיק">
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">אתרי תדמית</h3>
+            <p class="portfolio-legend__desc">אתרים שמספרים את הסיפור של העסק ומביאים לקוחות חדשים</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">מערכות ופורטלים</h3>
+            <p class="portfolio-legend__desc">פלטפורמות חכמות עם לוגיקה מתקדמת וניהול תוכן רחב</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">דפי נחיתה</h3>
+            <p class="portfolio-legend__desc">עמודים ממוקדים שמטרתם אחת, להמיר</p>
+          </div>
+          <div class="portfolio-legend__item">
+            <h3 class="portfolio-legend__title">חנויות אונליין</h3>
+            <p class="portfolio-legend__desc">אתרי מכירה עם חוויית משתמש שמגדילה הכנסות</p>
+          </div>
+        </div>
+        <div class="portfolio-showcase">
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/01.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">ספא ראש ישראל</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://headspa.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/02.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Fests</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://fests.io/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/03.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Buyz</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://buyz.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/04.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">Seato</h3>
+                <span class="portfolio-tile__tag">מערכות ופורטלים</span>
+                <a class="portfolio-tile__btn" href="https://seato.ai/en" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/07.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">REATS</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://reats.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/06.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">אפק דודיק</h3>
+                <span class="portfolio-tile__tag">דף נחיתה</span>
+                <a class="portfolio-tile__btn" href="https://afekdudik.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/05.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">ThaiMarry</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://thaimarry.co.il/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/08.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">וואלנייטס</h3>
+                <span class="portfolio-tile__tag">אתר תדמית</span>
+                <a class="portfolio-tile__btn" href="https://wallnights.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+          <article class="portfolio-tile">
+            <div class="portfolio-tile__mock" aria-hidden="true"></div>
+            <div class="portfolio-tile__media">
+              <img class="portfolio-tile__img" src="images/portfolio/09.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()" />
+            </div>
+            <div class="portfolio-tile__info">
+              <div class="portfolio-tile__row">
+                <h3 class="portfolio-tile__name">BalanceIL</h3>
+                <span class="portfolio-tile__tag">אתר עסקי מתקדם</span>
+                <a class="portfolio-tile__btn" href="https://balanceil.com/" target="_blank" rel="noopener noreferrer">לצפייה באתר</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="section__lead section__lead--center portfolio-page__cta">
+          רוצים אתר דומה או משהו לגמרי מותאם? <a class="card__link js-open-contact-modal" href="#">דברו איתנו</a>
         </p>
+      </div>
+    </section>
+
+    <section class="section pricing pricing--premium" id="websites-pricing">
+      <div class="container">
+        <div class="pricing-head pricing-head--center">
+          <p class="section__eyebrow">בניית אתרים</p>
+          <h2 class="section__title">לכל סוג עסק יש חבילה מתאימה</h2>
+          <p class="section__lead">
+            בין אם אתם צריכים דף נחיתה מהיר או מערכת מורכבת, יש לנו מסלול ברור, מחיר שקוף וליווי עד ההשקה.
+          </p>
+        </div>
         <div class="cards-grid cards-grid--pricing">
           <article class="card card--package">
             <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
             <h3 class="card__title">דף נחיתה</h3>
             <p class="card__price">₪1,500</p>
-            <p class="card__desc">קמפיין אחד, מסר אחד, המרות ממוקדות, עמוד אחד שעובד בשבילכם.</p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>קמפיין אחד, מסר אחד</li>
+              <li>המרות ממוקדות</li>
+              <li>עמוד בודד שעובד בשבילכם</li>
+            </ul>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
-          <article class="card card--package">
+          <article class="card card--package card--pricing-highlight">
+            <span class="pricing-card__badge">הכי מבוקש</span>
             <div class="card__icon card__icon--globe" aria-hidden="true">◉</div>
             <h3 class="card__title">אתר תדמית</h3>
             <p class="card__price">₪3,900</p>
-            <p class="card__desc">נוכחות אלגנטית ברשת, מספר עמודים, גלריה, פרטי קשר וחיבור לרשתות.</p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>נוכחות אלגנטית ברשת</li>
+              <li>מספר עמודים וגלריה</li>
+              <li>פרטי קשר וחיבור לרשתות</li>
+            </ul>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
             <div class="card__icon card__icon--star" aria-hidden="true">★</div>
             <h3 class="card__title">אתר עסקי מתקדם</h3>
             <p class="card__price">₪7,500</p>
-            <p class="card__desc">אתר מלא למותג שרוצה להתבלט, עמודים מרובים, טפסים, אינטגרציות וביצועים גבוהים.</p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>אתר מלא למותג שרוצה להתבלט</li>
+              <li>עמודים מרובים, טפסים</li>
+              <li>אינטגרציות וביצועים גבוהים</li>
+            </ul>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
             <div class="card__icon card__icon--cart" aria-hidden="true">🛒</div>
             <h3 class="card__title">חנות אונליין</h3>
             <p class="card__price">₪10,900</p>
-            <p class="card__desc">מכירה ישירה מהאתר, קטלוג, סל, תשלומים וניהול הזמנות.</p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>מכירה ישירה מהאתר</li>
+              <li>קטלוג, סל, תשלומים</li>
+              <li>ניהול הזמנות</li>
+            </ul>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package">
             <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
             <h3 class="card__title">מערכות ופורטלים</h3>
             <p class="card__price">₪17,900</p>
-            <p class="card__desc">פורטלים, אזורים אישיים, אוטומציות ואינטגרציות מותאמות לארגון שלכם.</p>
+            <p class="pricing-features__label">מה כלול</p>
+            <ul class="pricing-features">
+              <li>פורטלים ואזורים אישיים</li>
+              <li>אוטומציות מותאמות</li>
+              <li>אינטגרציות לארגון</li>
+            </ul>
             <a class="card__link js-open-contact-modal" href="#">פרטים נוספים</a>
           </article>
           <article class="card card--package card--cta-card">
@@ -101,6 +295,161 @@
           <span class="pricing-note__text">המחירים אינם כוללים דומיין ואחסון.</span>
           <span class="pricing-note__text pricing-note__text--highlight">המחירים כוללים מע״מ.</span>
         </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-hub-title">
+      <div class="container">
+        <p class="section__eyebrow">בוחרים תחום</p>
+        <h2 class="section__title" id="services-hub-title">כל השירותים במקום אחד</h2>
+        <p class="section__lead">מעבר לבניית אתרים — ניהול נוכחות, אוטומציית מכירות ותוכן שמחפשים אתכם בגוגל.</p>
+        <div class="cards-grid cards-grid--features">
+          <article class="card card--package">
+            <div class="card__icon card__icon--star" aria-hidden="true">📱</div>
+            <h3 class="card__title">ניהול סושיאל</h3>
+            <p class="card__desc">תכנון, יצירה ופרסום — עם דוחות חודשיים.</p>
+            <a class="card__link" href="service-social.html">לעמוד ולמחירון</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--chat" aria-hidden="true">🤖</div>
+            <h3 class="card__title">צ׳אטבוט מכירות (AI)</h3>
+            <p class="card__desc">הקמה ללא קוד, חיבור לערוצים ולידים אוטומטיים.</p>
+            <a class="card__link" href="service-chatbot.html">לעמוד ולמחירון</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--globe" aria-hidden="true">✎</div>
+            <h3 class="card__title">כתיבת תוכן SEO</h3>
+            <p class="card__desc">מאמרים ועמודים ממוקדי חיפוש.</p>
+            <a class="card__link" href="service-seo-content.html">לעמוד ולמחירון</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--gear" aria-hidden="true">⚙</div>
+            <h3 class="card__title">תחזוקת אתרים</h3>
+            <p class="card__desc">עדכונים, גיבויים, ניטור ושדרוגים שוטפים.</p>
+            <a class="card__link" href="service-maintenance.html">לעמוד ולמחירון</a>
+          </article>
+          <article class="card card--package">
+            <div class="card__icon card__icon--rocket" aria-hidden="true">🚀</div>
+            <h3 class="card__title">בניית אתרים</h3>
+            <p class="card__desc">דף נחיתה ועד מערכות — מחירון ותיק פרויקטים למטה.</p>
+            <a class="card__link" href="#websites-pricing">למחירון אתרים</a>
+            <a class="card__link card__link--block" href="#websites-portfolio">לתיק הפרויקטים</a>
+          </article>
+          <article class="card card--package card--cta-card">
+            <div class="card__icon card__icon--star" aria-hidden="true">🏷</div>
+            <h3 class="card__title">מבצעים וחבילות</h3>
+            <p class="card__desc card__desc--flush">בונדלים וריטיינר במחיר מיוחד.</p>
+            <a class="btn btn--primary btn--block" href="offers.html">לעמוד המבצעים</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="services-one-stop-title">
+      <div class="container">
+        <p class="section__eyebrow">גישה מרוכזת</p>
+        <h2 class="section__title" id="services-one-stop-title">למה עסקים בוחרים ספק אחד לאתר ולשיווק</h2>
+        <p class="section__lead section__lead--center">באתרי סוכנויות וסטודיואים בינלאומיים תראו לעיתים ״full-service digital״ — פחות תיאומים, יותר עקביות מותג, ומחירון שאפשר להשוות בראש שקט.</p>
+        <div class="selling-split selling-split--spaced">
+          <div class="selling-split__box">
+            <h3 class="selling-split__title">מתאים לך אם…</h3>
+            <ul>
+              <li>אתה לא רוצה להחזיק חמישה ספקים עם חמש שפות תקשורת</li>
+              <li>חשוב לך שדף הנחיתה, הסושיאל והבוט יספרו אותו סיפור</li>
+              <li>אתה מעדיף מספרים ברורים לפני חתימה</li>
+            </ul>
+          </div>
+          <div class="selling-split__box">
+            <h3 class="selling-split__title">איך מתחילים (שיחת היכרות)</h3>
+            <ul>
+              <li>10–15 דקות: מה עובד היום ומה חוסם</li>
+              <li>המלצה על מסלול מאתר + שירותים חודשיים</li>
+              <li>אם צריך — שליחת מחירון מפורט במייל</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" aria-labelledby="services-values-title">
+      <div class="container">
+        <div class="features__head">
+          <div class="features__rule" aria-hidden="true"></div>
+          <h2 class="section__title" id="services-values-title">מה מקבלים כשעובדים עם Atario</h2>
+          <p class="section__lead">ערכים שחוזרים אצל ספקי שירות מקצועיים — לא רק אצלנו.</p>
+        </div>
+        <div class="cards-grid cards-grid--features">
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--gold" aria-hidden="true">◇</div>
+            <h3 class="card__title">מחירון גלוי</h3>
+            <p class="card__desc">רוב השירותים עם טווח או חבילה קבועה לפני שיחת המכירה.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--blue" aria-hidden="true">✉</div>
+            <h3 class="card__title">תיעוד קצר</h3>
+            <p class="card__desc">סיכום מה סוכם, מה כלול, ומה קורה אם צריך לשנות כיוון.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--purple" aria-hidden="true">⚡</div>
+            <h3 class="card__title">ביצוע מהיר יחסית</h3>
+            <p class="card__desc">לוחות זמנים ריאליים — בלי הבטחות ל״מחר בבוקר״ שלא עומדים בהם.</p>
+          </article>
+          <article class="card card--feature">
+            <div class="card__icon-icon card__icon-icon--orange" aria-hidden="true">＋</div>
+            <h3 class="card__title">שדרוג הדרגתי</h3>
+            <p class="card__desc">מתחילים מחבילה קטנה ומרחיבים כשיש ROI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-faq-title">
+      <div class="container">
+        <p class="section__eyebrow">שאלות נפוצות</p>
+        <h2 class="section__title section__title--center" id="services-faq-title">לפני שבוחרים שירות</h2>
+        <div class="faq-list">
+          <details>
+            <summary>אפשר לקנות רק חלק מהשירותים?</summary>
+            <p>בהחלט. כל עמוד שירות עצמאי עם מחירון משלו. הדילים בעמוד המבצעים הם אופציה, לא חובה.</p>
+          </details>
+          <details>
+            <summary>איפה רואים את מחירון בניית האתרים ואת תיק הפרויקטים?</summary>
+            <p>מחירון החבילות — <a class="card__link" href="#websites-pricing">כאן</a>. גלריית האתרים שבנינו — <a class="card__link" href="#websites-portfolio">כאן</a>.</p>
+          </details>
+          <details>
+            <summary>האם אתם עובדים מרחוק בלבד?</summary>
+            <p>כן, רוב התהליך דיגיטלי. פגישות וידאו או טלפון לפי הצורך.</p>
+          </details>
+          <details>
+            <summary>מה קורה אחרי שהאתר עלה?</summary>
+            <p>ממליצים על תחזוקה חודשית ו/או סושיאל ותוכן — כדי שההשקה לא תהיה נקודה בודדת.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--band" aria-labelledby="websites-portfolio-after-title">
+      <div class="container">
+        <p class="section__eyebrow">אחרי שהאתר באוויר</p>
+        <h2 class="section__title section__title--center" id="websites-portfolio-after-title">רוב הלקוחות שלנו לא נעצרים בפרויקט חד־פעמי</h2>
+        <p class="section__lead section__lead--center">אפשר לשלב תחזוקה, סושיאל, תוכן SEO או בוט, כדי שהאתר שבתיק לא יעמוד ללא תנועה.</p>
+        <div class="cards-grid cards-grid--features cards-grid--band-offset">
+          <article class="card card--package">
+            <h3 class="card__title">תחזוקה חודשית</h3>
+            <p class="card__desc service-cross__mini">גיבויים, עדכונים ושקט נפשי.</p>
+            <a class="card__link" href="service-maintenance.html">למחירון</a>
+          </article>
+          <article class="card card--package">
+            <h3 class="card__title">ניהול סושיאל</h3>
+            <p class="card__desc service-cross__mini">להביא קהל לאתרים שבגלריה.</p>
+            <a class="card__link" href="service-social.html">למחירון</a>
+          </article>
+          <article class="card card--package">
+            <h3 class="card__title">מבצעים משולבים</h3>
+            <p class="card__desc service-cross__mini">חבילות במחיר דיל.</p>
+            <a class="card__link" href="offers.html">לעמוד המבצעים</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -167,18 +516,21 @@
       <div class="footer__col">
         <h4 class="footer__heading">שירותים</h4>
         <ul class="footer__links">
-          <li><a href="services.html">דפי נחיתה</a></li>
-          <li><a href="services.html">עיצוב אתרים</a></li>
-          <li><a href="services.html">אתרי עסקים</a></li>
-          <li><a href="services.html">חנויות אונליין</a></li>
-          <li><a href="services.html">מערכות ואפליקציות</a></li>
+          <li><a href="service-social.html">ניהול סושיאל</a></li>
+          <li><a href="service-chatbot.html">צ׳אטבוט AI</a></li>
+          <li><a href="service-seo-content.html">תוכן SEO</a></li>
+          <li><a href="service-maintenance.html">תחזוקת אתרים</a></li>
+          <li><a href="services.html#websites-pricing">בניית אתרים</a></li>
+          <li><a href="services.html#websites-portfolio">תיק פרויקטים</a></li>
+          <li><a href="offers.html">מבצעים וחבילות</a></li>
         </ul>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">ניווט</h4>
         <ul class="footer__links">
           <li><a href="index.html">בית</a></li>
-          <li><a href="portfolio.html">תיק עבודות</a></li>
+          <li><a href="services.html">שירותים</a></li>
+          <li><a href="offers.html">מבצעים</a></li>
           <li><a href="about.html">מי אנחנו</a></li>
           <li><a href="accessibility.html">הצהרת נגישות</a></li>
           <li><a href="#" class="js-open-contact-modal">צרו קשר</a></li>
