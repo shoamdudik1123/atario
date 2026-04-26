@@ -80,6 +80,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
 }
 
 body {
@@ -431,7 +432,8 @@ body {
 }
 
 .hero__title-line--accent {
-  color: var(--cyan);
+  color: #00e5ff;
+  text-shadow: 0 0 32px rgba(0, 229, 255, 0.42);
 }
 
 .hero__sub {
@@ -1992,11 +1994,32 @@ p.pricing-note {
   line-height: 1.2;
 }
 
+/* הדגשה בצבע המותג (#00E5FF) — כמו בתמונת יעוץ הצבע */
+.page-hero__title-em {
+  color: #00e5ff;
+  font-weight: 800;
+  text-shadow: 0 0 32px rgba(0, 229, 255, 0.42);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__title-line--accent,
+  .page-hero__title-em {
+    text-shadow: none;
+  }
+}
+
 .page-hero__lead {
   margin: 0;
   color: var(--text-muted);
   max-width: 42rem;
   font-size: 1.05rem;
+}
+
+.page-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .portfolio-intro {
@@ -2341,7 +2364,7 @@ p.pricing-note {
   height: 100%;
   min-height: 0;
   border-radius: 22px;
-  border: 1px solid rgba(0, 242, 255, 0.4);
+  border: 1px solid rgba(0, 229, 255, 0.4);
   background: linear-gradient(
     155deg,
     rgba(26, 34, 50, 0.78) 0%,
@@ -2377,7 +2400,7 @@ p.pricing-note {
 }
 
 .value-prop-card:hover {
-  border-color: rgba(0, 242, 255, 0.55);
+  border-color: rgba(0, 229, 255, 0.55);
   box-shadow:
     0 0 0 1px rgba(0, 229, 255, 0.1) inset,
     0 20px 52px rgba(0, 0, 0, 0.42),
@@ -2428,7 +2451,7 @@ p.pricing-note {
   letter-spacing: 0.08em;
   color: var(--cyan);
   background: rgba(0, 229, 255, 0.12);
-  border: 1px solid rgba(0, 242, 255, 0.48);
+  border: 1px solid rgba(0, 229, 255, 0.48);
   padding: 0.28rem 0.52rem;
   border-radius: 8px;
   line-height: 1.2;
@@ -2463,7 +2486,7 @@ p.pricing-note {
   height: 1.15rem;
   border-radius: 50%;
   background: rgba(0, 229, 255, 0.14);
-  border: 1px solid rgba(0, 242, 255, 0.48);
+  border: 1px solid rgba(0, 229, 255, 0.48);
   box-shadow: 0 0 16px rgba(0, 229, 255, 0.22);
 }
 
@@ -3601,7 +3624,7 @@ html.a11y-reduce-motion *::after {
 .work-showcase--seo {
   background:
     radial-gradient(ellipse 85% 55% at 100% 0%, rgba(16, 185, 129, 0.12), transparent 55%),
-    radial-gradient(ellipse 70% 50% at 0% 100%, rgba(59, 130, 246, 0.1), transparent 50%),
+    radial-gradient(ellipse 70% 50% at 0% 100%, rgba(0, 229, 255, 0.1), transparent 50%),
     var(--bg-elevated);
   border-block: 1px solid rgba(16, 185, 129, 0.18);
 }
@@ -3774,7 +3797,7 @@ html.a11y-reduce-motion *::after {
     rgba(0, 229, 255, 0.2),
     rgba(0, 229, 255, 0.05)
   );
-  border: 1px solid rgba(0, 242, 255, 0.25);
+  border: 1px solid rgba(0, 229, 255, 0.25);
   display: grid;
   place-items: center;
   position: relative;
@@ -3883,7 +3906,7 @@ html.a11y-reduce-motion *::after {
 
 .managed-status--ssl {
   color: var(--cyan);
-  border-color: rgba(0, 242, 255, 0.45);
+  border-color: rgba(0, 229, 255, 0.45);
   background: rgba(0, 229, 255, 0.08);
 }
 
@@ -3908,7 +3931,7 @@ html.a11y-reduce-motion *::after {
   font-weight: 700;
   color: var(--cyan);
   background: rgba(0, 229, 255, 0.08);
-  border: 1px solid rgba(0, 242, 255, 0.4);
+  border: 1px solid rgba(0, 229, 255, 0.4);
   border-radius: 999px;
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -4003,7 +4026,7 @@ html.a11y-reduce-motion *::after {
 
 .seo-result:hover {
   transform: translateY(-3px);
-  border-color: rgba(0, 242, 255, 0.4);
+  border-color: rgba(0, 229, 255, 0.4);
   box-shadow:
     0 0 0 1px rgba(0, 229, 255, 0.08) inset,
     0 24px 60px rgba(0, 0, 0, 0.42),
@@ -4011,7 +4034,7 @@ html.a11y-reduce-motion *::after {
 }
 
 .seo-result--featured {
-  border-color: rgba(0, 242, 255, 0.55);
+  border-color: rgba(0, 229, 255, 0.55);
   background:
     radial-gradient(
       circle at 100% 0%,
@@ -4059,7 +4082,7 @@ html.a11y-reduce-motion *::after {
   letter-spacing: 0.02em;
   color: var(--cyan);
   background: rgba(0, 229, 255, 0.08);
-  border: 1px solid rgba(0, 242, 255, 0.32);
+  border: 1px solid rgba(0, 229, 255, 0.32);
   border-radius: 999px;
 }
 
@@ -4090,7 +4113,7 @@ html.a11y-reduce-motion *::after {
   place-items: center;
   border-radius: 50%;
   background: rgba(0, 229, 255, 0.12);
-  border: 1px solid rgba(0, 242, 255, 0.4);
+  border: 1px solid rgba(0, 229, 255, 0.4);
   color: var(--cyan);
   font-size: 1rem;
   box-shadow: 0 0 14px rgba(0, 229, 255, 0.18);
