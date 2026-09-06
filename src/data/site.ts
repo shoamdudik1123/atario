@@ -1,12 +1,12 @@
 export const site = {
   name: 'TAVA',
   tagline: 'ריטריטים, טבע והתחדשות',
-  phone: '050-123-4567',
-  phoneHref: 'tel:0501234567',
-  email: 'hello@tava.co.il',
-  emailHref: 'mailto:hello@tava.co.il',
-  whatsapp: '972501234567',
-  whatsappHref: 'https://wa.me/972501234567',
+  phone: '053-432-1792',
+  phoneHref: 'tel:0534321792',
+  email: 'shoamdudik1123@gmail.com',
+  emailHref: 'mailto:shoamdudik1123@gmail.com',
+  whatsapp: '972534321792',
+  whatsappHref: 'https://wa.me/972534321792',
   city: 'ישראל',
 }
 
