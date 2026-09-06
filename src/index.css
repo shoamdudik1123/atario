@@ -164,6 +164,12 @@ p {
   color: var(--muted);
 }
 
+.hero .lead,
+.page-hero .lead,
+.retreat-hero .lead {
+  color: #fff;
+}
+
 .muted {
   color: var(--muted);
 }
