@@ -737,6 +737,19 @@ p {
   padding: 1.6rem;
 }
 
+.facilitator-note {
+  margin-top: 1.8rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.facilitator-note p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--forest);
+}
+
 .info-card dl {
   margin: 0 0 1.2rem;
 }

@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { FaqAccordion } from '../components/FaqAccordion'
-import { IconCalendar, IconPin, includedIcons } from '../components/Icons'
+import { IconCalendar, IconGuide, IconPin, includedIcons } from '../components/Icons'
 import { RegistrationForm } from '../components/RegistrationForm'
 import { ReviewCard } from '../components/Reviews'
 import { SafeImage } from '../components/SafeImage'
@@ -55,6 +55,10 @@ export function RetreatDetailPage() {
               <span>{retreat.location}</span>
             </li>
             <li>
+              <IconGuide />
+              <span>מעביר הריטריט: {retreat.facilitator}</span>
+            </li>
+            <li>
               <span>{retreat.duration}</span>
             </li>
             <li>
@@ -82,6 +86,10 @@ export function RetreatDetailPage() {
                 <li key={tag}>{tag}</li>
               ))}
             </ul>
+            <div className="facilitator-note">
+              <h2>מעביר הריטריט</h2>
+              <p>{retreat.facilitator}</p>
+            </div>
           </article>
           <aside className="info-card">
             <h2>פרטים מהירים</h2>
@@ -93,6 +101,10 @@ export function RetreatDetailPage() {
               <div>
                 <dt>אזור</dt>
                 <dd>{retreat.location}</dd>
+              </div>
+              <div>
+                <dt>מעביר הריטריט</dt>
+                <dd>{retreat.facilitator}</dd>
               </div>
               <div>
                 <dt>משך</dt>

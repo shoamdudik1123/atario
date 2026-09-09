@@ -51,6 +51,7 @@ export type Retreat = {
   description: string[]
   location: string
   locationNote: string
+  facilitator: string
   date: string
   endDate: string
   duration: string

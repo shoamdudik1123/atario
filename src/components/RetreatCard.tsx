@@ -27,6 +27,10 @@ export function RetreatCard({ retreat, featured = false }: RetreatCardProps) {
             <dd>{formatDateRange(retreat.date, retreat.endDate)}</dd>
           </div>
           <div>
+            <dt>מעביר הריטריט</dt>
+            <dd>{retreat.facilitator}</dd>
+          </div>
+          <div>
             <dt>משך</dt>
             <dd>{retreat.duration}</dd>
           </div>
